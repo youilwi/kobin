@@ -4,88 +4,113 @@
 body{
 	margin: 0;
 }
+a{
+	text-decoration: none;
+}
 /*-------------------------------------------*/
 /*             headerDiv 디자인              */
 /*-------------------------------------------*/
-#headerDiv{			/* 1. header div */
-	position: fixed;
-	z-index: 90;
-	width: 100%;
-	height: 224px;
-}
 .headerMenu{		/* 1.1 headerMenu */
 	position: relative;
-	height: 20px;
+	background-color: #337755;
+}
+.headerMenu a{
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
 	font-size: 13px;
-	text-align: right;
-	padding-right: 20px;
-	background-color: #77ee77;
+	text-align: center;
+	display: inline-block;
+	color: #ffffff;
+}
+.headerMenu a:hover{
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #33bb77;
 }
 .headerTitle{		/* 1.2 headerTitle */
 	position: relative;
-	height: 200px;
-	line-height: 200px;
+	height: 150px;
+	line-height: 150px;
 	font-size: 40px;
 	text-align: center;
-	background-color: white;
+	background-color: #ffffff;
 }
 .headerTitle a{		/* 1.2 headerTitle */
-	text-decoration: none;
-	line-height: 200px;
+	line-height: 150px;
 	color: #000000;
 }
 .menuBar{			/* 1.3 mainMenu */
 	position: relative;
-	background-color: #994411;
-}
-.mainMenu{			/* 1.3 mainMenu */
-	height: 60px;
-}
-/*-------------------------------------------*/
-/*              mainDiv 디자인               */
-/*-------------------------------------------*/
-#mainDiv{			/* 2. main div */
-	position: absolute;
-	z-index: 50;
-	top: 220px;
-	width: 100%;
-}
-
-.mainContents{		/* 2.2 mainContents */
-	float: left;
-	margin: 10px auto;
-	height: 400px;
-	padding: 30px;
-	border: 1px solid green;
-	border-radius: 50px;
+	background-color: #337755;
 }
 /*-------------------------------------------*/
 /*             mainMenu 디자인               */
 /*-------------------------------------------*/
 .mainMenu ul{
-	width: 1000px;
 	margin: 0 auto;
 	list-style-type: none;
 }
 .mainMenuUl li{
-	width: 150px;
-	height: 60px;
+	height: 50px;
 	text-align: center;
 	display: inline-block;
 }
 .mainMenuLi a{
-	text-decoration: none;
 	width: 150px;
-	height: 60px;
+	height: 50px;
+	line-height: 50px;
 	font-size: 17px;
-	line-height: 60px;
 	color: #ffffff;
+	display: inline-block;
 }
 .mainMenuLi a:hover{
-	display: inline-block;
-	width: 150px;
-	height: 60px;
-	line-height: 60px;
+	height: 50px;
+	line-height: 50px;
 	color: #ffffff;
-	background-color: #996633;
+	display: inline-block;
+	background-color: #33bb77;
+	border-radius: 10px;
+}
+/*-------------------------------------------*/
+/*             Contents 디자인               */
+/*-------------------------------------------*/
+.leftContents, .mainContents, .rightContents{
+	/*margin: 5px auto;*/
+	/*border: 1px solid green;*/
+	/*border-radius: 10px;*/
+}
+.mainDiv{
+	margin-top: 10px;
+	padding: 15px;
+	/*border: 1px solid red;*/
+}
+.leftDiv, .rightDiv{
+	margin: 10px auto;
+	height: 350px;
+	font-size: 17px;
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
+}
+.mainDiv10, .mainDiv20, .mainDiv30{
+/*	border: 1px solid red;
+	border-radius: 10px;*/
+}
+.mainLeft, .mainCenter, .mainRight{
+	margin: 10px auto;
+	height: 350px;
+	padding: 10px;
+	border: 1px solid blue;
+	border-radius: 10px;
+}
+.footer{			/* 2.4 footerDiv */
+	position: relative;
+	line-height: 100px;
+	height: 100px;
+	border: 1px solid blue;
+	font-size: 18px;
+	border-radius: 10px;
 }
