@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>/index.html</title>
+	<link rel="stylesheet" href="/css/bootstrap.css"/>
+	<link rel="stylesheet" href="/css/myHome.css"/>
+	<link rel="stylesheet" href="/css/myForm.css"/>
+</head>
+
+<body>
+	<div id="headerDiv">
+		<div class="row headerMenu">
+			<div class="col-xs-12">headerMenu</div>
+		</div>
+
+		<div class="row headerTitle">
+			<div class="col-xs-12">
+				<a href="/index.html">koreabin.com</a>
+			</div>
+		</div>
+
+		<div class="row menuBar">
+			<div class="col-xs-10 col-xs-offset-1 mainMenu">
+				<ul class="mainMenuUl">
+					<li class="mainMenuLi">
+						<a href="/index.html">Layout Template</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/myMenu10.html">Menu Template</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/loginForm.html">Login Template</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/memberForm.html">Form Template</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/menu4000.html">Table Template</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/menu5000.html">Calendar Template</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="mainDiv">
+		<div class="row contents">
+			<div class="col-xs-3 leftContents">
+				<div class="leftForm"></div>
+			</div>
+			<div class="col-xs-6 mainContents">
+				<div class="row col-xs-8 col-xs-offset-2 mainForm">
+					<h3>[ 로그인 화면 ]</h3>
+
+					<form id="loginForm" action="/loginAction" method="post">
+					
+						<p>회원정보는 '회원가입현황'을 확인하세요.</p>
+
+						<div class="input-group">
+				        	<input type="text" class="form-control" id="id" name="id" placeholder="아이디"/>
+				        	<p class="help-block">아이디 입력 내용을 확인하세요.</p>
+				        	<span class="input-group-btn">
+				        		<button class="btn btn-success" type="button" id="searchBtn">
+				        			<span class="glyphicon glyphicon-search">확인</span>
+				        		</button>
+				        	</span>
+				        </div>
+
+				        </br>
+
+						<div class="form-group">
+							<input type="password" class="form-control" id="pwd" name="pwd" placeholder="비밀번호"/>
+							<p class="help-block">비밀번호 입력을 확인하세요.</p>
+						</div>
+
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" id="idCheck" name="idCheck"/> 아이디 저장
+							</label>
+						</div>
+
+						<button type="submit" class="btn btn-primary" id="loginBtn">
+							<i class="glyphicon glyphicon-send"></i>&nbsp;로그인
+						</button>&nbsp;&nbsp;&nbsp;
+						<button type="reset" class="btn btn-warning" id="cancelBtn">
+							<i class="glyphicon glyphicon-remove"></i>&nbsp;취소
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-xs-3 rightContents">
+				<div class="rightForm">
+		        </div>
+			</div>
+		</div>
+
+		<div class="row footer">
+			<div class="col-xs-12 address"></div>
+		</div>	
+	</div>
+
+	<script src="/js/jquery-1.11.2.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/loginForm.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* myForm.css under the bootstrap.css */
+
+#memberForm{
+	padding: 30px;
+	border: 1px solid red;
+}
+#formTitle{
+	background-color: #cecece;
+	border-radius: 10px;
+	padding: 10px 10px 10px 150px;
+}
+.formDiv div{
+	display: inline-block;
+}
+.xlabel{
+	text-align: right;
+	width: 120px;
+	margin-top: 20px;
+}
+
+.xlabel label{ padding-right: 5px; }
+.xlabel2{ text-align: right; }
+.xlabel2 label{ padding-right: 10px; }
+
+.xinput12{ width: 40px; }
+.xinput14{ width: 60px; }
+.xinput51{ width: 158px; }
+.xinput52{ width: 230px; }
+.xinput53{ width: 300px; }
+.xinput54{ width: 400px; }
+.xinput55{ width: 500px; }
+
+.xradioBtn{ padding-left: 20px; }
+.xradioBtn label{ padding-left: 30px; }
+
+.btnGroup{
+	width: 500px;
+	margin-top: 20px;
+	text-align: center;
+}
+.searchBtn{
+	width: 55px;
+	height: 30px;
+	background-color: #cecece;
+}
+.btnGroup button{
+	margin: 0 5px;
+}
+
+.xddlBox{
+	
+}
+.xchkBox{
+	
+}

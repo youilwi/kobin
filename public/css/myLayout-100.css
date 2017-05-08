@@ -1,0 +1,114 @@
+@charset "utf-8"; 
+/* 한글 인코딩 설정 */
+/*-------------------------------------------*/
+body{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+/*-------------------------------------------*/
+/*             headerDiv 디자인              */
+/*-------------------------------------------*/
+.headerMenu{		/* 1.1 headerMenu */
+	position: relative;
+	background-color: #337755;
+}
+.headerMenu a{
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
+	text-align: center;
+	display: inline-block;
+	color: #ffffff;
+}
+.headerMenu a:hover{
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #33bb77;
+}
+.headerTitle{		/* 1.2 headerTitle */
+	position: relative;
+	height: 150px;
+	line-height: 150px;
+	font-size: 40px;
+	text-align: center;
+	background-color: #ffffff;
+}
+.headerTitle a{		/* 1.2 headerTitle */
+	line-height: 150px;
+	color: #000000;
+}
+.menuBar{			/* 1.3 mainMenu */
+	position: relative;
+	background-color: #337755;
+}
+/*-------------------------------------------*/
+/*             mainMenu 디자인               */
+/*-------------------------------------------*/
+.mainMenu ul{
+	margin: 0 auto;
+	list-style-type: none;
+}
+.mainMenuUl li{
+	height: 50px;
+	text-align: center;
+	display: inline-block;
+}
+.mainMenuLi a{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 17px;
+	color: #ffffff;
+	display: inline-block;
+}
+.mainMenuLi a:hover{
+	height: 50px;
+	line-height: 50px;
+	color: #ffffff;
+	display: inline-block;
+	background-color: #33bb77;
+	border-radius: 10px;
+}
+/*-------------------------------------------*/
+/*             Contents 디자인               */
+/*-------------------------------------------*/
+.leftContents, .mainContents, .rightContents{
+	margin: 10px auto;
+	padding: 10px;
+	/*border: 1px solid green;*/
+	/*border-radius: 10px;*/
+}
+.mainDiv{
+	/*border: 1px solid red;*/
+}
+.leftDiv, .rightDiv{
+	margin: 10px auto;
+	height: 400px;
+	padding: 10px;
+	border: 1px solid blue;
+	border-radius: 10px;
+}
+.mainDiv10, .mainDiv20, .mainDiv30{
+/*	border: 1px solid red;
+	border-radius: 10px;*/
+}
+.mainLeft, .mainCenter, .mainRight{
+	margin: 10px auto;
+	height: 400px;
+	padding: 10px;
+	border: 1px solid blue;
+	border-radius: 10px;
+}
+.footer{			/* 2.4 footerDiv */
+	position: relative;
+	line-height: 100px;
+	height: 100px;
+	border: 1px solid blue;
+	border-radius: 10px;
+}

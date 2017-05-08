@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>/index.html</title>
+	<link rel="stylesheet" href="/css/bootstrap.css"/>
+	<link rel="stylesheet" href="/css/myHome.css"/>
+	<link rel="stylesheet" href="/css/myForm.css"/>
+</head>
+
+<body>
+	<div id="headerDiv">
+		<div class="row headerMenu">
+			<div class="col-xs-12">headerMenu</div>
+		</div>
+
+		<div class="row headerTitle">
+			<div class="col-xs-12">
+				<a href="/index.html">koreabin.com</a>
+			</div>
+		</div>
+
+		<div class="row menuBar">
+			<div class="col-xs-8 col-xs-offset-2 mainMenu">
+				<ul class="mainMenuUl">
+					<li class="mainMenuLi">
+						<a href="/myForm/memberForm.html">회원가입</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/loginForm.html">로그인</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/memberList.html">회원가입 현황</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/menu4000.html">메뉴-4000</a>
+					</li>
+					<li class="mainMenuLi">
+						<a href="/myForm/menu5000.html">메뉴-5000</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="mainDiv">
+		<div class="row contents">
+			<div class="col-xs-3 leftContents">
+				<div class="leftForm"></div>
+			</div>
+			<div class="col-xs-6 mainContents">
+				<div class="mainForm">
+					<h3>[ 회원 가입현황 화면 ]</h3>
+
+					<table id="memberList" border="1" cellspacing="0">
+						<caption>회원목록</caption>
+
+						<colgroup>
+							<col width="100"/>
+							<col width="200"/>
+							<col width="200"/>
+							<col width="100"/>
+							<col width="100"/>
+						</colgroup>
+
+						<thead>
+							<tr>
+								<th>아이디</th>
+								<th>이름</th>
+								<th>비밀번호</th>
+								<th>이메일</th>
+								<th>핸드폰</th>
+							</tr>
+						</thead>
+
+						<tbody id="memberListBody"></tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="col-xs-3 rightContents">
+				<div class="rightForm"></div>
+			</div>
+		</div>
+
+		<div class="row footer">
+			<div class="col-xs-12 address"></div>
+		</div>	
+	</div>
+
+	<script src="/js/jquery-1.11.2.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/memberList.js"></script>
+</body>
+</html>

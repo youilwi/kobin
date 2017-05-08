@@ -1,0 +1,28 @@
+@charset "utf-8";	
+/* 한글 인코딩 설정 */
+/*-------------------------------------------*/
+#subMenuTitle{
+	text-align: center;
+	line-height: 50px;
+}
+.subMenu .subMenuList li{
+	width: 200px;
+	line-height: 50px;
+	text-align: center;
+	margin-bottom: 1px;
+	list-style-type: none;
+	background-color: #335577;
+}
+.subMenu .subMenuList li a{
+	width: 200px;
+	line-height: 50px;
+	font-size: 18px;
+	color: #ffffff;
+}
+.subMenu .subMenuList li a:hover{
+	width: 200px;
+	line-height: 50px;
+	background-color: #447799;
+	display: inline-block;
+}
+/*-------------------------------------------*/

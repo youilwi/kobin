@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>MyRegExp.html</title>
+	<link rel="stylesheet" href="../css/bootstrap.css"/>
+	<style>
+		/* 초기에는 모든 help-block을 보이지 않게 한다. */
+		#myForm .help-block{
+			display: none;
+		}
+		.form-control-feedback{
+			display: none;
+		}
+		.container{
+			width: 400px;
+			border: 1px solid red;
+		}
+		.btn{
+			margin: 10px 150px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h3>폼 validation 테스트</h3>
+		
+		<form action="" id="myForm">
+			<div class="form-group has-feedback">
+				<label for="id" class="control-label">아이디</label>
+				<input type="text" id="id" class="form-control"/>
+				<span class="glyphicon form-control-feedback"></span>
+				<p class="help-block">아이디는 (영문+숫자)로 (5자~30글자)</p>
+			</div>
+
+			<div class="form-group has-feedback">
+				<label for="name" class="control-label">이름</label>
+				<input type="text" id="name" class="form-control"/>
+				<span class="glyphicon form-control-feedback"></span>
+				<p class="help-block">이름은 (2~30글자)를 입력하세요.</p>
+			</div>
+
+			<div class="form-group has-feedback">
+				<label for="email" class="control-label">이메일</label>
+				<input type="text" id="email" class="form-control"/>
+				<span class="glyphicon form-control-feedback"></span>
+				<p class="help-block">이메일 형식입니다.(hong@naver.com)</p>
+			</div>
+
+			<div class="form-group has-feedback">
+				<label for="mobile" class="control-label">핸드폰</label>
+				<input type="text" id="mobile" class="form-control"/>
+				<span class="glyphicon form-control-feedback"></span>
+				<p class="help-block">핸드폰번호 형식입니다.(010-5234-1758)</p>
+			</div>
+
+			<div class="form-group has-feedback">
+				<label for="phone" class="control-label">전화번호</label>
+				<input type="text" id="phone" class="form-control"/>
+				<span class="glyphicon form-control-feedback"></span>
+				<p class="help-block">전화번호 형식입니다.(02-5234-1758)</p>
+			</div>
+
+			<div class="form-group has-feedback">
+				<label for="birthDate" class="control-label">생년월일</label>
+				<input type="text" id="birthDate" class="form-control"/>
+				<span class="glyphicon form-control-feedback"></span>
+				<p class="help-block">생년월일 형식입니다.(2017-1-1)</p>
+			</div>
+
+			<button type="submit" class="btn btn-primary">가입</button>
+		</form>
+	</div>
+
+	<script src="../js/jquery-3.2.0.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/myRegExp.js"></script>
+</body>
+</html>
