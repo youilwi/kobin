@@ -44,7 +44,9 @@ for(var i=0; i<menuItem.length; i++){
 	makeMenu(menuItem[0].menu, menuItem[i]);
 }
 
-$(".mainMenu li a").mouseover(function(){
+$(".mainMenuLi a").on("click", function(){
+	alert("mainMenu li a is clicked..");
+
 	var selectedMainMenu = $(this).text();	// 이곳의 this..
 	$("#subMenuTitle").text(selectedMainMenu);
 	
