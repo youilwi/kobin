@@ -45,7 +45,7 @@ for(var i=0; i<menuItem.length; i++){
 }
 
 $(".mainMenuLi a").on("click", function(){
-	alert("mainMenu li a is clicked..");
+	//alert("mainMenu li a is clicked..");
 
 	var selectedMainMenu = $(this).text();	// 이곳의 this..
 	$("#subMenuTitle").text(selectedMainMenu);

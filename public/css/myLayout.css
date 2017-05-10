@@ -15,7 +15,7 @@ a{
 	background-color: #337755;
 }
 .headerMenu a{
-	width: 100px;
+	width: 100%;
 	height: 25px;
 	line-height: 25px;
 	font-size: 13px;
@@ -24,7 +24,7 @@ a{
 	color: #ffffff;
 }
 .headerMenu a:hover{
-	width: 100px;
+	width: 100%;
 	height: 25px;
 	line-height: 25px;
 	display: inline-block;

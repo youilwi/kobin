@@ -15,7 +15,7 @@ a{
 	background-color: #337755;
 }
 .headerMenu a{
-	width: 100px;
+	width: 100%;
 	height: 25px;
 	line-height: 25px;
 	font-size: 13px;
@@ -24,7 +24,7 @@ a{
 	color: #ffffff;
 }
 .headerMenu a:hover{
-	width: 100px;
+	width: 100%;
 	height: 25px;
 	line-height: 25px;
 	display: inline-block;
@@ -60,7 +60,7 @@ a{
 	display: inline-block;
 }
 .mainMenuLi a{
-	width: 150px;
+	width: 100%;
 	height: 50px;
 	line-height: 50px;
 	font-size: 17px;
@@ -108,9 +108,10 @@ a{
 }
 .footer{			/* 2.4 footerDiv */
 	position: relative;
-	line-height: 100px;
+	padding-top: 16px;
 	height: 100px;
 	border: 1px solid blue;
-	font-size: 18px;
+	font-size: 16px;
 	border-radius: 10px;
+	font-family: "Times New Roman", Consolas, "NanumGothic", Gothic, arial, helvetica, serif;
 }
