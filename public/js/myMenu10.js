@@ -3,8 +3,8 @@
 
 var menuItem = [
 	{menu:"Layout", menuId:"subMenu-11", text:"Layout100", href:"/myForm/myLayout-100.html"},
-	{menu:"Layout", menuId:"subMenu-12", text:"Layout200", href:"/myForm/myGrid.html"},
-	{menu:"Layout", menuId:"subMenu-13", text:"Layout300", href:"#"},
+	{menu:"Layout", menuId:"subMenu-12", text:"Layout200", href:"/myForm/myLayout-200.html"},
+	{menu:"Layout", menuId:"subMenu-13", text:"Layout300", href:"/myForm/myGrid.html"},
 	{menu:"Menu", menuId:"subMenu-21", text:"Menu100", href:"#"},
 	{menu:"Menu", menuId:"subMenu-22", text:"Menu200", href:"#"},
 	{menu:"Menu", menuId:"subMenu-23", text:"Menu300", href:"#"},
