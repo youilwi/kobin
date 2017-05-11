@@ -86,18 +86,21 @@ a{
 .mainDiv{
 	margin-top: 10px;
 	padding: 15px;
-	/*border: 1px solid red;*/
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
 }
 .leftDiv, .rightDiv{
 	margin: 10px auto;
 	height: 350px;
-	font-size: 17px;
+	font-size: 16px;
+	font-weight: bold;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
+	font-family: "Times New Roman", Consolas, "NanumGothic", Gothic, arial, helvetica, serif;
 }
-.mainDiv10, .mainDiv20, .mainDiv30{
-/*	border: 1px solid red;
-	border-radius: 10px;*/
+/*.mainDiv10, .mainDiv20, .mainDiv30{
+	border: 1px solid red;
+	border-radius: 10px;
 }
 .mainLeft, .mainCenter, .mainRight{
 	margin: 10px auto;
@@ -105,13 +108,14 @@ a{
 	padding: 10px;
 	border: 1px solid blue;
 	border-radius: 10px;
-}
+}*/
 .footer{			/* 2.4 footerDiv */
 	position: relative;
 	padding-top: 16px;
 	height: 100px;
-	border: 1px solid blue;
+	border: 1px solid #aabbcc;
 	font-size: 16px;
+	font-weight: bold;
 	border-radius: 10px;
 	font-family: "Times New Roman", Consolas, "NanumGothic", Gothic, arial, helvetica, serif;
 }

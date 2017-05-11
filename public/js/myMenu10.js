@@ -2,25 +2,25 @@
 // html의 MainMenu와 menuItem 배열의 "menu 이름"은 반드시 일치해야 한다.
 
 var menuItem = [
-	{menu:"Layout", menuId:"subMenu-11", text:"myLayout-100", href:"/myForm/myLayout-100.html"},
-	{menu:"Layout", menuId:"subMenu-12", text:"myLayout-200", href:"/myForm/myGrid.html"},
-	{menu:"Layout", menuId:"subMenu-13", text:"myLayout-300", href:"#"},
-	{menu:"Menu", menuId:"subMenu-21", text:"myMenu-100", href:"#"},
-	{menu:"Menu", menuId:"subMenu-22", text:"myMenu-200", href:"#"},
-	{menu:"Menu", menuId:"subMenu-23", text:"myMenu-300", href:"#"},
-	{menu:"Menu", menuId:"subMenu-24", text:"myMenu-400", href:"#"},
-	{menu:"Form", menuId:"subMenu-31", text:"myForm-100", href:"#"},
-	{menu:"Form", menuId:"subMenu-32", text:"myForm-200", href:"#"},
-	{menu:"Form", menuId:"subMenu-33", text:"myForm-300", href:"#"},
-	{menu:"Table", menuId:"subMenu-41", text:"myTable-100", href:"#"},
-	{menu:"Table", menuId:"subMenu-42", text:"myTable-100", href:"#"},
-	{menu:"Table", menuId:"subMenu-43", text:"myTable-100", href:"#"},
-	{menu:"Table", menuId:"subMenu-44", text:"myTable-100", href:"#"},
-	{menu:"Calendar", menuId:"subMenu-51", text:"Calendar-100", href:"#"},
-	{menu:"Calendar", menuId:"subMenu-52", text:"Calendar-100", href:"#"},
-	{menu:"Login", menuId:"subMenu-61", text:"myLogin-100", href:"#"},
-	{menu:"Login", menuId:"subMenu-62", text:"myLogin-200", href:"#"},
-	{menu:"Login", menuId:"subMenu-63", text:"myLogin-300", href:"#"}
+	{menu:"Layout", menuId:"subMenu-11", text:"Layout100", href:"/myForm/myLayout-100.html"},
+	{menu:"Layout", menuId:"subMenu-12", text:"Layout200", href:"/myForm/myGrid.html"},
+	{menu:"Layout", menuId:"subMenu-13", text:"Layout300", href:"#"},
+	{menu:"Menu", menuId:"subMenu-21", text:"Menu100", href:"#"},
+	{menu:"Menu", menuId:"subMenu-22", text:"Menu200", href:"#"},
+	{menu:"Menu", menuId:"subMenu-23", text:"Menu300", href:"#"},
+	{menu:"Menu", menuId:"subMenu-24", text:"Menu400", href:"#"},
+	{menu:"Form", menuId:"subMenu-31", text:"Form100", href:"#"},
+	{menu:"Form", menuId:"subMenu-32", text:"Form200", href:"#"},
+	{menu:"Form", menuId:"subMenu-33", text:"Form300", href:"#"},
+	{menu:"Table", menuId:"subMenu-41", text:"Table100", href:"#"},
+	{menu:"Table", menuId:"subMenu-42", text:"Table100", href:"#"},
+	{menu:"Table", menuId:"subMenu-43", text:"Table100", href:"#"},
+	{menu:"Table", menuId:"subMenu-44", text:"Table100", href:"#"},
+	{menu:"Calendar", menuId:"subMenu-51", text:"Calendar1", href:"#"},
+	{menu:"Calendar", menuId:"subMenu-52", text:"Calendar2", href:"#"},
+	{menu:"Login", menuId:"subMenu-61", text:"Login1", href:"#"},
+	{menu:"Login", menuId:"subMenu-62", text:"Login2", href:"#"},
+	{menu:"Login", menuId:"subMenu-63", text:"Login3", href:"#"}
 ]
 
 var makeMenu = function(mainMenu, selectedMenuItem){
