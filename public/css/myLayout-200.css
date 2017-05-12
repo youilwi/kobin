@@ -79,7 +79,7 @@ a{
 /*             Contents 디자인               */
 /*-------------------------------------------*/
 .leftContents, .mainContents, .rightContents{
-	margin: 0px auto;
+	margin-top: 10px;
 }
 .leftContents100, .leftContents200{
 	width: 100%;
@@ -93,29 +93,31 @@ a{
 	border-radius: 10px;
 	border: 1px solid #aabbcc;
 }
-.mainLeft, .mainCenter, .mainRight{
-	margin: 0px auto;
+.mainLeft, .mainRight{
+/*	border: 1px solid blue;
+	border-radius: 10px;*/
 }
 .mainLeft100, .mainLeft200{
-	width: 95%;
+	width: 93%;
 	height: 400px;
 	border-radius: 10px;
 	border: 1px solid #aabbcc;
 }
 .mainCenter100, .mainCenter200{
-	width: 95%;
+	width: 93%;
 	height: 400px;
 	border-radius: 10px;
 	border: 1px solid #aabbcc;
 }
 .mainRight100, .mainRight200{
-	width: 95%;
+	width: 93%;
 	height: 400px;
 	border-radius: 10px;
 	border: 1px solid #aabbcc;
 }
-.mainLeftFull, .mainCenterFull, .mainRightFull{
-/*	border: 1px solid red;
+.mainLeftFull, .mainRightFull{
+/*	width: 95%;
+	border: 1px solid red;
 	border-radius: 10px;*/
 }
 .footer{			/* 2.4 footerDiv */

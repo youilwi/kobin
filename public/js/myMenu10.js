@@ -4,11 +4,11 @@
 var menuItem = [
 	{menu:"Layout", menuId:"subMenu-11", text:"Layout100", href:"/myForm/myLayout-100.html"},
 	{menu:"Layout", menuId:"subMenu-12", text:"Layout200", href:"/myForm/myLayout-200.html"},
-	{menu:"Layout", menuId:"subMenu-13", text:"Layout300", href:"/myForm/myGrid.html"},
+	{menu:"Layout", menuId:"subMenu-13", text:"Layout300", href:"/myForm/myLayout-300.html"},
+	{menu:"Layout", menuId:"subMenu-14", text:"Layout400", href:"/myForm/myGrid.html"},
 	{menu:"Menu", menuId:"subMenu-21", text:"Menu100", href:"#"},
 	{menu:"Menu", menuId:"subMenu-22", text:"Menu200", href:"#"},
 	{menu:"Menu", menuId:"subMenu-23", text:"Menu300", href:"#"},
-	{menu:"Menu", menuId:"subMenu-24", text:"Menu400", href:"#"},
 	{menu:"Form", menuId:"subMenu-31", text:"Form100", href:"#"},
 	{menu:"Form", menuId:"subMenu-32", text:"Form200", href:"#"},
 	{menu:"Form", menuId:"subMenu-33", text:"Form300", href:"#"},
