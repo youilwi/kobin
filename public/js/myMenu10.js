@@ -9,9 +9,9 @@ var menuItem = [
 	{menu:"Menu", menuId:"subMenu-21", text:"Menu100", href:"/myForm/myGrid.html"},
 	{menu:"Menu", menuId:"subMenu-22", text:"Menu200", href:"#"},
 	{menu:"Menu", menuId:"subMenu-23", text:"Menu300", href:"#"},
-	{menu:"Form", menuId:"subMenu-31", text:"Form100", href:"#"},
-	{menu:"Form", menuId:"subMenu-32", text:"Form200", href:"#"},
-	{menu:"Form", menuId:"subMenu-33", text:"Form300", href:"#"},
+	{menu:"Form", menuId:"subMenu-31", text:"Form100", href:"/myForm/myForm-100.html"},
+	{menu:"Form", menuId:"subMenu-32", text:"Form200", href:"/myForm/myForm-200.html"},
+	{menu:"Form", menuId:"subMenu-33", text:"Form300", href:"/myForm/myForm-300.html"},
 	{menu:"Table", menuId:"subMenu-41", text:"Table100", href:"#"},
 	{menu:"Table", menuId:"subMenu-42", text:"Table100", href:"#"},
 	{menu:"Table", menuId:"subMenu-43", text:"Table100", href:"#"},
@@ -24,30 +24,33 @@ var menuItem = [
 ]
 
 var makeMenu = function(mainMenu, selectedMenuItem){
-	// menuList를 만들어서 UL에 추가한다.
-	var $ul = $(".subMenu .subMenuList");
-	var $li = $("<li/>").attr("class", selectedMenuItem.menu)
-						.appendTo($ul);
+	if(mainMenu == selectedMenuItem.menu){
+		// menuList를 만들어서 UL에 추가한다.
+		var $ul = $(".subMenu .subMenuList");
+		var $li = $("<li/>").attr("class", selectedMenuItem.menu)
+							.appendTo($ul);
 
-	$("<a/>").attr("id", selectedMenuItem.menuId)	// 아이디
-			.attr("href", selectedMenuItem.href)	// 연결 URL
-			.text(selectedMenuItem.text)			// 텍스트
-			.appendTo($li);					// ul에 붙이기..
-
-	if(mainMenu != selectedMenuItem.menu){	// 첫 메뉴가 아니면..
-		$li.css("display", "none");
+		$("<a/>").attr("id", selectedMenuItem.menuId)	// 아이디
+				.attr("href", selectedMenuItem.href)	// 연결 URL
+				.text(selectedMenuItem.text)			// 텍스트
+				.appendTo($li);					// ul에 붙이기..
 	}
+	// if(mainMenu != selectedMenuItem.menu){	// 첫 메뉴가 아니면..
+	// 	$li.css("display", "none");
+	// }
 };
 
 // subMenu의 menuItem을 만드는 함수를 호출한다.
 for(var i=0; i<menuItem.length; i++){
-	makeMenu(menuItem[0].menu, menuItem[i]);
+	mainMenuName = $("#subMenuTitle").text();
+	makeMenu(mainMenuName, menuItem[i]);
 }
 
 $(".mainMenuLi a").on("click", function(){
 	//alert("mainMenu li a is clicked..");
 
 	var selectedMainMenu = $(this).text();	// 이곳의 this..
+	//alert("selectedMainMenu = "+selectedMainMenu);
 	$("#subMenuTitle").text(selectedMainMenu);
 	
 	$(".subMenuList li").each(function(index, url){
@@ -57,4 +60,23 @@ $(".mainMenuLi a").on("click", function(){
 			$(this).css("display", "none");			// 다르다...
 		}
 	});
+});
+
+$(".mainMenuLi a").on("click", function(){
+	for(var i=0; i<menuItem.length; i++){
+		mainMenuName = $(this).text();
+		makeMenu(mainMenuName, menuItem[i]);
+	}
+});
+
+$(".subMenuList li a").on("click", function(){
+	//alert("click_id = "+this.id);
+	//alert($("#subMenuTitle").text());
+
+	for(var i=0; i<menuItem.length; i++){
+		if(menuItem[i].menuId == this.id){
+			alert("click_id = "+menuItem[i].menuId);
+			makeMenu($("#subMenuTitle").text(), menuItem[i]);			
+		}
+	}	
 });
