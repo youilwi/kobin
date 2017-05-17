@@ -85,7 +85,7 @@ a{
 }
 .leftContentsFull, .rightContentsFull{
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
@@ -95,7 +95,7 @@ a{
 }
 .mainLeftFull, .mainCenterFull, .mainRightFull{
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
