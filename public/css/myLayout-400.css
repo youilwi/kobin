@@ -78,19 +78,22 @@ a{
 /*-------------------------------------------*/
 /*             Contents 디자인               */
 /*-------------------------------------------*/
-.contents{
-	margin-top: 10px;
-}
 .leftContents, .mainContents, .rightContents{
+	margin-top: 10px;
+/*	border: 1px solid green;
+	border-radius: 10px;*/
+}
+.leftContentsFull, .rightContentsFull{
 	width: 100%;
 	height: 600px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
-.leftContentsFull, .mainContentsFull, .rightContentsFull{
-
-}
 .mainLeft, .mainCenter, .mainRight{
+/*	border: 1px solid blue;
+	border-radius: 10px;*/
+}
+.mainLeftFull, .mainCenterFull, .mainRightFull{
 	width: 100%;
 	height: 600px;
 	border: 1px solid #aabbcc;
