@@ -92,28 +92,16 @@ a{
 .leftDiv, .rightDiv{
 	margin: 10px auto;
 	height: 350px;
-	font-size: 16px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
-	font-family: "Times New Roman", Consolas, "NanumGothic", Gothic, arial, helvetica, serif;
+	font-family: "Times New Roman", Consolas, "NanumGothic", Gothic, arial;
 }
-/*.mainDiv10, .mainDiv20, .mainDiv30{
-	border: 1px solid red;
-	border-radius: 10px;
-}
-.mainLeft, .mainCenter, .mainRight{
-	margin: 10px auto;
-	height: 350px;
-	padding: 10px;
-	border: 1px solid blue;
-	border-radius: 10px;
-}*/
-.footer{			/* 2.4 footerDiv */
+.footer{
 	position: relative;
 	padding-top: 16px;
 	height: 100px;
 	border: 1px solid #aabbcc;
 	font-size: 16px;
 	border-radius: 10px;
-	font-family: "Times New Roman", Consolas, "NanumGothic", Gothic, arial, helvetica, serif;
+	font-family: "Times New Roman", Consolas, "NanumGothic", Gothic, arial;
 }
