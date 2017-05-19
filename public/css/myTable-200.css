@@ -89,9 +89,7 @@ a{
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
-.mainLeft, .mainCenter, .mainRight{
-/*	border: 1px solid blue;
-	border-radius: 10px;*/
+.mainContentsFull{
 }
 .mainLeftFull, .mainCenterFull, .mainRightFull{
 	width: 100%;
@@ -106,3 +104,12 @@ a{
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
+/*-------------------------------------------*/
+/*                table 디자인               */
+/*-------------------------------------------*/
+/*@media( min-width: 768px ) {
+    .table{
+        display: block;
+    }
+}*/
+/*-------------------------------------------*/

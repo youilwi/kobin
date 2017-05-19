@@ -89,13 +89,10 @@ a{
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
-.mainLeft, .mainCenter, .mainRight{
-/*	border: 1px solid blue;
-	border-radius: 10px;*/
-}
-.mainLeftFull, .mainCenterFull, .mainRightFull{
+.mainContentsFull{
 	width: 100%;
 	height: 600px;
+	margin: 0 auto;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
@@ -106,3 +103,13 @@ a{
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
+/*-------------------------------------------*/
+/*                table 디자인               */
+/*-------------------------------------------*/
+/* table 하위 요소들의 display 속성을 변경합니다. */
+/*@media( min-width: 768px ) {
+    .table{
+        display: block;
+    }
+}*/
+/*-------------------------------------------*/
