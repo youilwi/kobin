@@ -80,26 +80,18 @@ a{
 /*-------------------------------------------*/
 .leftContents, .mainContents, .rightContents{
 	margin-top: 10px;
-/*	border: 1px solid green;
-	border-radius: 10px;*/
 }
 .leftContentsFull, .rightContentsFull{
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
-.mainLeft, .mainCenter, .mainRight{
-/*	border: 1px solid blue;
-	border-radius: 10px;*/
+.mainContentsFull{
+	padding-top: 30px;
+	text-align: center;
 }
-.mainLeftFull, .mainCenterFull, .mainRightFull{
-	width: 100%;
-	height: 600px;
-	border: 1px solid #aabbcc;
-	border-radius: 10px;
-}
-.footer{			/* 2.4 footerDiv */
+.footer{
 	margin-top: 10px;
 	position: relative;
 	height: 100px;
