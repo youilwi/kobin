@@ -106,3 +106,9 @@ a{
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
+/*-------------------------------------------*/
+/*            MemberForm 디자인              */
+/*-------------------------------------------*/
+#memberForm .help-block{
+	display: none;
+}
