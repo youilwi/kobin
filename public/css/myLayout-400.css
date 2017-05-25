@@ -94,8 +94,6 @@ a{
 	border: 1px solid #aabbcc;
 }
 .mainLeft, .mainRight{
-/*	border: 1px solid blue;
-	border-radius: 10px;*/
 }
 .mainLeft100, .mainLeft200{
 	width: 97%;
@@ -110,11 +108,8 @@ a{
 	border: 1px solid #aabbcc;
 }
 .mainLeftFull, .mainRightFull{
-/*	width: 95%;
-	border: 1px solid red;
-	border-radius: 10px;*/
 }
-.footer{			/* 2.4 footerDiv */
+.footer{
 	position: relative;
 	line-height: 100px;
 	height: 100px;
