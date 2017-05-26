@@ -80,9 +80,7 @@
 
 									<div class="col-xs-12" style="margin: 20px;">
 										<h4>
-											( <p id="subulProcessName" style="display: inline-block; color: red;">
-												주문
-											</p> ) 정보 등록내역
+											( <p id="subulProcessName">주문</p> ) 정보 등록내역
 										</h4>
 									</div>
 
@@ -258,7 +256,7 @@
 												<div class="col-xs-7">
 													<input type="text" class="form-control" id="companyId" name="companyId" readonly="radonly" placeholder="코드(회사이름)" />
 												</div>
-												<div class="col-xs-3" style="text-align: right;">
+												<div class="col-xs-3">
 													<button class="btn btn-info" id="searchCompanyId">
 											 			<i class="glyphicon glyphicon-search"></i>회사 찾기
 											 		</button>
@@ -279,6 +277,7 @@
 												</div>
 											</div>
 
+											<hr/>
 											<div class="row">
 											    <div class="col-xs-7">										
 													달력:&nbsp;&nbsp;
@@ -295,12 +294,11 @@
 												</div>
 												<div class="col-xs-2">
 													<button class="btn btn-info" id="searchWeekNo">
-											 			<i class="glyphicon glyphicon-search"></i>이동
+											 			<i class="glyphicon"></i>이동
 											 		</button>
 												</div>
 											</div>
 
-											<hr/>
 											<div class="row">
 												<div class="col-xs-12 calendarDate">
 													<a class="redColor" href="">01</a>&nbsp;
@@ -330,8 +328,42 @@
 											</div><hr/>
 
 											<div class="row">
-												<div class="col-xs-6"></div>
-												<div class="col-xs-6"></div>
+												<div class="col-xs-8">
+													<table class="table table-striped table-condensed">
+											        	<colgroup>
+											        		<col class="col-xs-4"/>
+											        		<col class="col-xs-4"/>
+											        		<col class="col-xs-4"/>
+											        	</colgroup>
+
+											            <thead>
+											                <tr>
+									                            <th>품목코드</th>
+									                            <th>품목명</th>
+									                            <th>등록일자</th>
+									                        </tr>
+											            </thead>
+
+											            <tbody>
+											                <tr>
+									                            <td>xxxxxxxxxxxx</td>
+									                            <td>벌크단무지</td>
+									                            <td>2017-04-06</td>
+									                        </tr>
+											                <tr>
+									                            <td>xxxxxxxxxxxx</td>
+									                            <td>그린생생단무지</td>
+									                            <td>2017-04-06</td>
+									                        </tr>
+									                        <tr>
+									                            <td>xxxxxxxxxxxx</td>
+									                            <td>맛좋은단무지</td>
+									                            <td>2017-04-06</td>
+									                        </tr>
+									                    </tbody>
+									                </table>
+												</div>
+												<div class="col-xs-4"></div>
 											</div>
 										</div><!-- mainRight100 -->
 									</div>

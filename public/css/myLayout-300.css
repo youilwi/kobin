@@ -126,7 +126,7 @@ a{
 }
 .jobProcessUl > li{
 	height: 30px;
-	margin: 10px 0px;
+	margin-top: 10px;
 	text-align: center;
 	display: inline-block;
 }
@@ -144,4 +144,9 @@ a{
 .jobProcessUl > li > .checkedA{
 	background-color: #bb0000;
 	border: 1px solid #770000;
+}
+#subulProcessName{
+	display: inline-block;
+	font-weight: bold;
+	color: blue;
 }

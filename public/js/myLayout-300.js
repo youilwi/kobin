@@ -20,3 +20,4 @@ $(".jobProcessUl > li").on("click", function(){
 	// 클릭한 업무 구분의 아이디로 함수를 호출한다.
 	updateProcessId($(this).attr("id"));
 });
+
