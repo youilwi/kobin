@@ -124,6 +124,13 @@ a{
 .jobProcessUl{
 	list-style-type: none;
 }
+.clickedDate{
+	border: 1px solid green;
+	/*border-radius: 50%;*/
+}
+/*-------------------------------------------*/
+/*            jobProcess 디자인              */
+/*-------------------------------------------*/
 .jobProcessUl > li{
 	height: 30px;
 	margin-top: 10px;
@@ -149,4 +156,11 @@ a{
 	display: inline-block;
 	font-weight: bold;
 	color: blue;
+}
+/*-------------------------------------------*/
+/*              Table 디자인                 */
+/*-------------------------------------------*/
+#tableDiv{
+	height:160px; 
+	overflow:auto;
 }

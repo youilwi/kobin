@@ -77,11 +77,11 @@
 						<div class="col-xs-3 mainLeft">
 							<div class="row">
 								<div class="col-xs-12 mainLeftFull">
-									<img src="/images/puff1.png" alt="Puff.png"><br/>
-									<img src="/images/puff2.png" alt="Puff.png"><br/>
-									<img src="/images/puff3.png" alt="Puff.png"><br/>
-									<img src="/images/puff4.png" alt="Puff.png"><br/>
-									<img src="/images/puff5.png" alt="Puff.png"><br/>
+									<img class="draggable" src="/images/puff1.png"><br/>
+									<img class="draggable" src="/images/puff2.png"><br/>
+									<img class="draggable" src="/images/puff3.png"><br/>
+									<img class="draggable" src="/images/puff4.png"><br/>
+									<img class="draggable" src="/images/puff5.png"><br/>
 								</div><!-- mainLeftFull -->
 							</div>
 						</div><!-- mainContentsLeft -->
@@ -105,11 +105,11 @@
 						<div class="col-xs-3 mainRight">
 							<div class="row">
 								<div class="col-xs-12 mainRightFull">
-									<img src="/images/puff1.png" alt="Puff.png"><br/>
-									<img src="/images/puff2.png" alt="Puff.png"><br/>
-									<img src="/images/puff3.png" alt="Puff.png"><br/>
-									<img src="/images/puff4.png" alt="Puff.png"><br/>
-									<img src="/images/puff5.png" alt="Puff.png"><br/>
+									<img class="draggable" src="/images/puff1.png"><br/>
+									<img class="draggable" src="/images/puff2.png"><br/>
+									<img class="draggable" src="/images/puff3.png"><br/>
+									<img class="draggable" src="/images/puff4.png"><br/>
+									<img class="draggable" src="/images/puff5.png"><br/>
 								</div><!-- mainRightFull -->
 							</div>
 						</div><!-- mainContentsRight -->
@@ -121,6 +121,7 @@
 		<div class="col-xs-2 rightContents">
 			<div class="row">
 				<div class="col-xs-12 rightContentsFull">
+				
 				</div><!-- rightContentsFull -->
 			</div>
 		</div><!-- rightContents -->
@@ -131,8 +132,14 @@
  	</div><!-- footer -->
 
 	<script src="/js/jquery-1.11.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="/js/bootstrap.js"></script>
 	<script src="/js/myMenu10.js"></script>
+	<script>
+		$( function() { 
+			$( ".draggable" ).draggable();
+		});
+	</script>
 </div>
 </body>
 </html>
