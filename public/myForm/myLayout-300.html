@@ -281,13 +281,15 @@
 											<div class="row">
 											    <div class="col-xs-7">										
 													달력:&nbsp;&nbsp;
-													<span>2017</span>년&nbsp;&nbsp;
-													<span>5</span>월&nbsp;&nbsp;
-										    		(&nbsp;<span>xx</span>&nbsp;주차&nbsp;~
-										    		&nbsp;<span>xx</span>&nbsp;주차&nbsp;)
+													<span id="displayYear"></span>년&nbsp;&nbsp;
+													<span id="displayMonth"></span>월&nbsp;&nbsp;
+										    		(&nbsp;<span id="displayWeek1"></span>&nbsp;주차&nbsp;~
+										    		&nbsp;<span id="displayWeek1"></span>&nbsp;주차&nbsp;)
 									    		
-													<br/><a href="#">&larr;이전주</a>&nbsp;&nbsp;
-													&nbsp;&nbsp;<a href="#">다음주&rarr;</a>
+													<br/>
+													<a id="beforeWeek" href="#">&larr;이전주</a>
+													&nbsp;&nbsp;&nbsp;&nbsp;
+													<a id="nextWeek" href="#">다음주&rarr;</a>
 												</div>
 												<div class="col-xs-3">
 													<input type="text" class="form-control" id="weekNo" name="weekNo" placeholder="week(1~55)" />
@@ -301,29 +303,29 @@
 
 											<div class="row">
 												<div class="col-xs-12 calendarDate">
-													<a class="redColor clickedDate" href="#">01</a>&nbsp;
-													<a class="blackColor" href="">02</a>&nbsp;
-													<a class="blackColor" href="">03</a>&nbsp;
-													<a class="blackColor" href="">04</a>&nbsp;
-													<a class="blackColor" href="">05</a>&nbsp;
-													<a class="blackColor" href="">06</a>&nbsp;
-													<a class="blueColor" href="">07</a>&nbsp;&nbsp;&nbsp;
+													<a id="cal1" class="redColor clickedDate" href="#"></a>&nbsp;
+													<a id="cal2" class="blackColor" href=""></a>&nbsp;
+													<a id="cal3" class="blackColor" href=""></a>&nbsp;
+													<a id="cal4" class="blackColor" href=""></a>&nbsp;
+													<a id="cal5" class="blackColor" href=""></a>&nbsp;
+													<a id="cal6" class="blackColor" href=""></a>&nbsp;
+													<a id="cal7" class="blueColor" href=""></a>&nbsp;&nbsp;&nbsp;
 
-													<a class="redColor" href="">08</a>&nbsp;
-													<a class="blackColor" href="">09</a>&nbsp;
-													<a class="blackColor" href="">10</a>&nbsp;
-													<a class="blackColor" href="">11</a>&nbsp;
-													<a class="blackColor" href="">12</a>&nbsp;
-													<a class="blackColor" href="">13</a>&nbsp;
-													<a class="blueColor" href="">14</a>&nbsp;&nbsp;&nbsp;
+													<a id="cal8" class="redColor" href=""></a>&nbsp;
+													<a id="cal9" class="blackColor" href=""></a>&nbsp;
+													<a id="cal10" class="blackColor" href=""></a>&nbsp;
+													<a id="cal11" class="blackColor" href=""></a>&nbsp;
+													<a id="cal12" class="blackColor" href=""></a>&nbsp;
+													<a id="cal13" class="blackColor" href=""></a>&nbsp;
+													<a id="cal14" class="blueColor" href=""></a>&nbsp;&nbsp;&nbsp;
 
-													<a class="redColor" href="">15</a>&nbsp;
-													<a class="blackColor" href="">16</a>&nbsp;
-													<a class="blackColor" href="">17</a>&nbsp;
-													<a class="blackColor" href="">18</a>&nbsp;
-													<a class="blackColor" href="">19</a>&nbsp;
-													<a class="blackColor" href="">20</a>&nbsp;
-													<a class="blueColor" href="">21</a>&nbsp;
+													<a id="cal15" class="redColor" href=""></a>&nbsp;
+													<a id="cal16" class="blackColor" href=""></a>&nbsp;
+													<a id="cal17" class="blackColor" href=""></a>&nbsp;
+													<a id="cal18" class="blackColor" href=""></a>&nbsp;
+													<a id="cal19" class="blackColor" href=""></a>&nbsp;
+													<a id="cal20" class="blackColor" href=""></a>&nbsp;
+													<a id="cal21" class="blueColor" href=""></a>&nbsp;
 												</div>
 											</div><hr/>
 
