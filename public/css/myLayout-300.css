@@ -109,6 +109,29 @@ a{
 /*-------------------------------------------*/
 /*             Calendar 디자인               */
 /*-------------------------------------------*/
+.jobProcessUl{
+	list-style-type: none;
+}
+.calendarDate td{
+	width: 25px;
+	text-align: center;
+	font-size: 15px;
+}
+.todayDate{
+	color:; #ffffff;
+	font-weight: bold;
+	background-color: green;
+	border-radius: 50%;
+}
+.clickedDate{
+	border: 1px solid red;
+	background-color: pink;
+}
+.calValue{
+	color: blue;
+	font-size: 16px;
+	/*font-weight: bold;*/
+}
 .redColor{
 	color: red;
 }
@@ -121,39 +144,16 @@ a{
 .blackColor{
 	color: black;
 }
-.jobProcessUl{
-	list-style-type: none;
-}
-.calendarDate td{
-	width: 25px;
-	text-align: center;
-	font-size: 15px;
-}
-
-.clickedDate{
-	border: 1px solid green;
-	/*border-radius: 50%;*/
-}
-.todayDate{
-	border: 1px solid red;
-	background-color: pink;
-}
-
-.calValue{
-	color: blue;
-	font-size: 16px;
-	/*font-weight: bold;*/
-}
 /*-------------------------------------------*/
 /*            jobProcess 디자인              */
 /*-------------------------------------------*/
-.jobProcessUl > li{
+.jobProcessLi{
 	height: 30px;
 	margin-top: 10px;
 	text-align: center;
 	display: inline-block;
 }
-.jobProcessUl > li > a{
+.jobProcessLi > span{
 	width: 100%;
 	height: 30px;
 	line-height: 30px;
@@ -164,10 +164,10 @@ a{
 	border-radius: 5px;
 	display: inline-block;
 }
-.jobProcessUl > li > .checkedA{
+/*.jobProcessUl > li > .checkedA{
 	background-color: #bb0000;
 	border: 1px solid #770000;
-}
+}*/
 #subulProcessName{
 	display: inline-block;
 	font-weight: bold;

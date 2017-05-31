@@ -24,7 +24,7 @@ function makeCalendar(displayYear, displayMonth){
 
 		if(feature.getDate() == today.getDate()){
 			$(".calendarDate #cal"+(i+1))
-				.parent().addClass("todayDate")
+				.addClass("todayDate")
 				.siblings().removeClass("todayDate");
 		}
 	}
@@ -79,12 +79,10 @@ $("#nextWeek").on("click", function(){
 	$("#displayWeek2").text(tmp+3);
 });
 
-$(document).on("click", ".calendarTableTr > td > a", function(){
+$(document).on("click", ".calendarTableTr > td", function(){
 	var id = $(this).attr("id");
-	alert(".calendarTableTr > td > a = "+id);
-
-	$("#"+id).parent().addClass("clickedDate")	// 부모는 추가
-	.siblings().removeClass("clickedDate");		// 형제는 제거
+	$("#"+id).addClass("clickedDate")		// 부모는 추가
+	.siblings().removeClass("clickedDate");	// 형제는 제거
 });
 
 // 의미는 같지만.. 만들어지는 시점 때문에.. 아주 중요하다.
