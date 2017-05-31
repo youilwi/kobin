@@ -254,7 +254,7 @@
 													<h4><label for="companyId">회사:</label></h4>
 												</div>												
 												<div class="col-xs-7">
-													<input type="text" class="form-control" id="companyId" name="companyId" readonly="radonly" placeholder="코드(회사이름)" />
+													<input type="text" class="form-control" id="companyId" name="companyId" value="그린식품 주식회사" readonly="radonly" placeholder="코드(회사이름)" />
 												</div>
 												<div class="col-xs-3" style="text-align: right;">
 													<button class="btn btn-primary" id="searchCompanyId">
@@ -279,58 +279,58 @@
 
 											<hr/>
 											<div class="row">
-											    <div class="col-xs-7">										
+											    <div class="col-xs-8">										
 													달력:&nbsp;&nbsp;
-													<span id="displayYear"></span>년&nbsp;&nbsp;
-													<span id="displayMonth"></span>월&nbsp;&nbsp;
-										    		(&nbsp;<span id="displayWeek1"></span>&nbsp;주차&nbsp;~
-										    		&nbsp;<span id="displayWeek1"></span>&nbsp;주차&nbsp;)
-									    		
-													<br/>
-													<a id="beforeWeek" href="#">&larr;이전주</a>
-													&nbsp;&nbsp;&nbsp;&nbsp;
-													<a id="nextWeek" href="#">다음주&rarr;</a>
+													<span id="displayYear" class="calValue">2017</span>&nbsp;년&nbsp;
+													<span id="displayMonth" class="calValue">5</span>&nbsp;월&nbsp;
+										    		( <span id="displayWeek1" class="calValue">1</span>&nbsp;주 ~
+										    		 <span id="displayWeek2" class="calValue">3</span>&nbsp;주 )
 												</div>
-												<div class="col-xs-3">
-													<input type="text" class="form-control" id="weekNo" name="weekNo" placeholder="week(1~55)" />
-												</div>
-												<div class="col-xs-2">
-													<button class="btn btn-primary" id="searchWeekNo">
-											 			<i class="glyphicon"></i>주이동
-											 		</button>
+												<div class="col-xs-4" style="padding-bottom: 10px;">
+													<a id="beforeWeek" href="#">&larr;이전주</a>&nbsp;&nbsp;
+													&nbsp;&nbsp;<a id="nextWeek" href="#">다음주&rarr;</a>
 												</div>
 											</div>
 
 											<div class="row">
 												<div class="col-xs-12 calendarDate">
-													<a id="cal1" class="redColor clickedDate" href="#"></a>&nbsp;
-													<a id="cal2" class="blackColor" href=""></a>&nbsp;
-													<a id="cal3" class="blackColor" href=""></a>&nbsp;
-													<a id="cal4" class="blackColor" href=""></a>&nbsp;
-													<a id="cal5" class="blackColor" href=""></a>&nbsp;
-													<a id="cal6" class="blackColor" href=""></a>&nbsp;
-													<a id="cal7" class="blueColor" href=""></a>&nbsp;&nbsp;&nbsp;
+													<table>
+														<tr class="calendarTableTr">
+															<td>
+																<a id="cal1" class="redColor" href="#">
+															</td>
+															<td><a id="cal2" class="blackColor" href=""></a></td>
+															<td><a id="cal3" class="blackColor" href=""></a></td>
+															<td><a id="cal4" class="blackColor" href=""></a></td>
+															<td><a id="cal5" class="blackColor" href=""></a></td>
+															<td><a id="cal6" class="blackColor" href=""></a></td>
+															<td><a id="cal7" class="blueColor" href=""></a></td>
 
-													<a id="cal8" class="redColor" href=""></a>&nbsp;
-													<a id="cal9" class="blackColor" href=""></a>&nbsp;
-													<a id="cal10" class="blackColor" href=""></a>&nbsp;
-													<a id="cal11" class="blackColor" href=""></a>&nbsp;
-													<a id="cal12" class="blackColor" href=""></a>&nbsp;
-													<a id="cal13" class="blackColor" href=""></a>&nbsp;
-													<a id="cal14" class="blueColor" href=""></a>&nbsp;&nbsp;&nbsp;
+															<td><a id="cal8" class="redColor" href=""></a></td>
+															<td><a id="cal9" class="blackColor" href=""></a></td>
+															<td><a id="cal10" class="blackColor" href=""></a></td>
+															<td><a id="cal11" class="blackColor" href=""></a></td>
+															<td><a id="cal12" class="blackColor" href=""></a></td>
+															<td><a id="cal13" class="blackColor" href=""></a></td>
+															<td><a id="cal14" class="blueColor" href=""></a></td>
 
-													<a id="cal15" class="redColor" href=""></a>&nbsp;
-													<a id="cal16" class="blackColor" href=""></a>&nbsp;
-													<a id="cal17" class="blackColor" href=""></a>&nbsp;
-													<a id="cal18" class="blackColor" href=""></a>&nbsp;
-													<a id="cal19" class="blackColor" href=""></a>&nbsp;
-													<a id="cal20" class="blackColor" href=""></a>&nbsp;
-													<a id="cal21" class="blueColor" href=""></a>&nbsp;
+															<td><a id="cal15" class="redColor" href=""></a></td>
+															<td><a id="cal16" class="blackColor" href=""></a></td>
+															<td><a id="cal17" class="blackColor" href=""></a></td>
+															<td><a id="cal18" class="blackColor" href=""></a></td>
+															<td><a id="cal19" class="blackColor" href=""></a></td>
+															<td><a id="cal20" class="blackColor" href=""></a></td>
+															<td class="clickedDate">
+																<a id="cal21" class="blueColor" href=""></a>
+															</td>
+														</tr>
+													</table>
 												</div>
 											</div><hr/>
 
 											<div class="row">
 												<div id="tableDiv" class="col-xs-8">
+													<span style="font-size:18px;">[ 품목 선택 ]</span>
 													<table class="table table-striped table-condensed">
 											        	<colgroup>
 											        		<col class="col-xs-4"/>
@@ -349,32 +349,32 @@
 											            <tbody>
 											                <tr>
 									                            <td>xxxxxxxxxxxx</td>
-									                            <td>그린생생단무지</td>
+									                            <td><a>그린생생단무지</a></td>
 									                            <td>20170406</td>
 									                        </tr>
 									                        <tr>
 									                            <td>xxxxxxxxxxxx</td>
-									                            <td>맛좋은단무지</td>
+									                            <td><a href="">맛좋은단무지</a></td>
 									                            <td>20170406</td>
 									                        </tr>
 									                        <tr>
 									                            <td>xxxxxxxxxxxx</td>
-									                            <td>생생단무지</td>
+									                            <td><a href="">생생단무지</a></td>
 									                            <td>20170406</td>
 									                        </tr>
 									                        <tr>
 									                            <td>xxxxxxxxxxxx</td>
-									                            <td>생생단무지</td>
+									                            <td><a href="">생생단무지</a></td>
 									                            <td>20170406</td>
 									                        </tr>
 											                <tr>
 									                            <td>xxxxxxxxxxxx</td>
-									                            <td>벌크용그린생생단무지</td>
+									                            <td><a href="">벌크용그린생생단무지</a></td>
 									                            <td>20170406</td>
 									                        </tr>
 									                        <tr>
 									                            <td>xxxxxxxxxxxx</td>
-									                            <td>맛좋은단무지</td>
+									                            <td><a href="">맛좋은단무지</a></td>
 									                            <td>20170406</td>
 									                        </tr>
 									                    </tbody>

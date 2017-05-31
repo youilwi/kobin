@@ -124,9 +124,25 @@ a{
 .jobProcessUl{
 	list-style-type: none;
 }
+.calendarDate td{
+	width: 25px;
+	text-align: center;
+	font-size: 15px;
+}
+
 .clickedDate{
 	border: 1px solid green;
 	/*border-radius: 50%;*/
+}
+.todayDate{
+	border: 1px solid red;
+	background-color: pink;
+}
+
+.calValue{
+	color: blue;
+	font-size: 16px;
+	/*font-weight: bold;*/
 }
 /*-------------------------------------------*/
 /*            jobProcess 디자인              */
@@ -161,6 +177,6 @@ a{
 /*              Table 디자인                 */
 /*-------------------------------------------*/
 #tableDiv{
-	height:160px; 
+	height:150px; 
 	overflow:auto;
 }
