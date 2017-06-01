@@ -195,20 +195,6 @@
 					                            <td>300.00</td>
 					                            <td>EA</td>
 					                        </tr>
-					                        <tr>
-					                            <td>xxxxx</td>
-					                            <td>홍길동</td>
-					                            <td>2017-04-06</td>
-					                            <td>300.00</td>
-					                            <td>EA</td>
-					                        </tr>
-					                        <tr>
-					                            <td>xxxxx</td>
-					                            <td>홍길동</td>
-					                            <td>2017-04-06</td>
-					                            <td>300.00</td>
-					                            <td>EA</td>
-					                        </tr>
 					                    </tbody>
 					                </table>
 
@@ -264,72 +250,76 @@
 											</div>
 
 											<div class="row">
-												<div class="col-xs-12 jobProcess">
-													<ul class="jobProcessUl">
-														<li id="orderLi" class="col-xs-2 jobProcessLi">
-															<span>주문</span>
-														</li>
-														<li id="purchaseLi" class="col-xs-2 jobProcessLi">
-															<span>구매</span>
-														</li>
-														<li id="productLi" class="col-xs-2 jobProcessLi">
-															<span>생산</span>
-														</li>
-														<li id="packLi" class="col-xs-2 jobProcessLi">
-															<span>포장</span>
-														</li>
-														<li id="issueLi" class="col-xs-2 jobProcessLi">
-															<span>출고</span>
-														</li>
-														<li id="salesLi" class="col-xs-2 jobProcessLi">
-															<span>재고</span>
-														</li>
-													</ul>
+												<div class="col-xs-12 col-xs-offset-1">
+													<div class="row jobProcessRow">
+														<button class="btn btn-success jobProcess clickedJob" id="orderLi">
+											 				<i class="glyphicon"></i>주문
+											 			</button>
+											 			<button class="btn btn-success jobProcess" id="purchaseLi">
+											 				<i class="glyphicon"></i>구매
+											 			</button>
+											 			<button class="btn btn-success jobProcess" id="productLi">
+											 				<i class="glyphicon"></i>생산
+											 			</button>
+														<button class="btn btn-success jobProcess" id="packLi">
+											 				<i class="glyphicon"></i>포장
+											 			</button>
+														<button class="btn btn-success jobProcess" id="issueLi">
+											 				<i class="glyphicon"></i>출고
+											 			</button>
+														<button class="btn btn-success jobProcess" id="stockLi">
+											 				<i class="glyphicon"></i>재고
+											 			</button>
+											 		</div>
 												</div>
 											</div>
 
 											<hr/>
 											<div class="row">
-											    <div class="col-xs-8">										
+											    <div class="col-xs-7">										
 													달력:&nbsp;&nbsp;
-													<span id="displayYear" class="calValue">2017</span>&nbsp;년&nbsp;
-													<span id="displayMonth" class="calValue">5</span>&nbsp;월&nbsp;
-										    		( <span id="displayWeek1" class="calValue">1</span>&nbsp;주 ~
-										    		 <span id="displayWeek2" class="calValue">3</span>&nbsp;주 )
+													<span id="displayYear" class="calTitle">2017</span>&nbsp;년&nbsp;
+													<span id="displayMonth" class="calTitle">5</span>&nbsp;월&nbsp;
+										    		( <span id="displayWeek1" class="calTitle">1</span>&nbsp;주 ~
+										    		 <span id="displayWeek2" class="calTitle">3</span>&nbsp;주 )
 												</div>
-												<div class="col-xs-4" style="padding-bottom: 10px;">
-													<a id="beforeWeek" href="#">&larr;이전주</a>&nbsp;&nbsp;
-													&nbsp;&nbsp;<a id="nextWeek" href="#">다음주&rarr;</a>
+												<div class="col-xs-5 weeklyMove" style="text-align: right;">
+													<button class="btn btn-primary" id="beforeWeek">
+											 			<i class="glyphicon"></i>&larr;이전주
+											 		</button>
+											 		<button class="btn btn-primary" id="nextWeek">
+											 			<i class="glyphicon"></i>다음주&rarr;
+											 		</button>
 												</div>
 											</div>
 
-											<div class="row">
+											<div class="row" style="padding-top: 10px;">
 												<div class="col-xs-12 calendarDate">
 													<table>
 														<tr class="calendarTableTr">
-															<td id="cal1" class="redColor"></td>
-															<td id="cal2" class="blackColor"></td>
-															<td id="cal3" class="blackColor"></td>
-															<td id="cal4" class="blackColor"></td>
-															<td id="cal5" class="blackColor"></td>
-															<td id="cal6" class="blackColor"></td>
-															<td id="cal7" class="blueColor"></td>
+															<td><span id="cal0" class="calDd redColor">0</span></td>
+															<td><span id="cal1" class="calDd blackColor">1</span></td>
+															<td><span id="cal2" class="calDd blackColor">2</span></td>
+															<td><span id="cal3" class="calDd blackColor">3</span></td>
+															<td><span id="cal4" class="calDd blackColor">4</span></td>
+															<td><span id="cal5" class="calDd blackColor">5</span></td>
+															<td><span id="cal6" class="calDd blueColor">6</span></td>
 
-															<td id="cal8" class="redColor"></td>
-															<td id="cal9" class="blackColor"></td>
-															<td id="cal10" class="blackColor"></td>
-															<td id="cal11" class="blackColor"></td>
-															<td id="cal12" class="blackColor"></td>
-															<td id="cal13" class="blackColor"></td>
-															<td id="cal14" class="blueColor"></td>
+															<td><span id="cal7" class="calDd redColor">7</span></td>
+															<td><span id="cal8" class="calDd blackColor">8</span></td>
+															<td><span id="cal9" class="calDd blackColor">9</span></td>
+															<td><span id="cal10" class="calDd blackColor">10</span></td>
+															<td><span id="cal11" class="calDd blackColor">11</span></td>
+															<td><span id="cal12" class="calDd blackColor">12</span></td>
+															<td><span id="cal13" class="calDd blueColor">13</span></td>
 
-															<td id="cal15" class="redColor"></td>
-															<td id="cal16" class="blackColor"></td>
-															<td id="cal17" class="blackColor"></td>
-															<td id="cal18" class="blackColor"></td>
-															<td id="cal19" class="blackColor"></td>
-															<td id="cal20" class="blackColor"></td>
-															<td id="cal21" class="blueColor"></td>
+															<td><span id="cal14" class="calDd redColor">14</span></td>
+															<td><span id="cal15" class="calDd blackColor">15</span></td>
+															<td><span id="cal16" class="calDd blackColor">16</span></td>
+															<td><span id="cal17" class="calDd blackColor">17</span></td>
+															<td><span id="cal18" class="calDd blackColor">18</span></td>
+															<td><span id="cal19" class="calDd blackColor">19</span></td>
+															<td><span id="cal20" class="calDd blueColor">20</span></td>
 														</tr>
 													</table>
 												</div>
