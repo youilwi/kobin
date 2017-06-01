@@ -70,7 +70,7 @@ $("#beforeWeek").on("click", function(){
 	$("#displayWeek2").text(tmp+1);
 
 	// 이전주를 클릭하면 'clickedDate class'를 모두 지운다.
-	$(".calDd").children().siblings().removeClass("clickedDate");
+	$(".calDate").siblings().removeClass("clickedDate");
 });
 
 // 다음주를 클릭하면 처리하는 함수
@@ -84,14 +84,12 @@ $("#nextWeek").on("click", function(){
 	$("#displayWeek2").text(tmp+3);
 
 	// 다음주를 클릭하면 'clickedDate class'를 모두 지운다.
-	$(".calDd").siblings().removeClass("clickedDate");
+	$(".calDate").siblings().removeClass("clickedDate");
 });
 
 // 의미는 같지만.. 만들어지는 시점 때문에.. 아주 중요하다.
 // document 객체가 만들어진 후에는 언제든지.. 이벤트 발생.
-$(document).on("click", ".calDd", function(){
-	var id = $(this).attr("id");
-	alert("id = "+id);
+$(document).on("click", ".calDate", function(){
 	// 부모는 클래스 추가하고, 형제에서는 클래스를 제거하기..
 	$(this).addClass("clickedDate").siblings().removeClass("clickedDate");
 });
