@@ -1,12 +1,8 @@
-@charset "utf-8"; 
+@charset "utf-8";  
 /* 한글 인코딩 설정 */
 /*-------------------------------------------*/
-body{
-	margin: 0;
-}
-a{
-	text-decoration: none;
-}
+body{ margin: 0; }
+a{ text-decoration: none; }
 /*-------------------------------------------*/
 /*             headerDiv 디자인              */
 /*-------------------------------------------*/
@@ -93,9 +89,15 @@ a{
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
-.mainRight100, .mainRight200{
+.mainRight100{
 	width: 100%;
-	height: 400px;
+	height: 420px;
+	border-radius: 10px;
+	border: 1px solid #aabbcc;
+}
+.mainRight200{
+	width: 100%;
+	height: 380px;
 	border-radius: 10px;
 	border: 1px solid #aabbcc;
 }
@@ -109,22 +111,10 @@ a{
 /*-------------------------------------------*/
 /*             Calendar 디자인               */
 /*-------------------------------------------*/
-.calTitle{
+.calendarTitle{
 	color: blue;
 	font-size: 16px;
-	/*font-weight: bold;*/
-}
-.redColor{
-	color: red;
-}
-.blueColor{
-	color: blue;
-}
-.grayColor{
-	color: gray;
-}
-.blackColor{
-	color: black;
+	font-weight: bold;
 }
 .calendarDate td{
 	width: 24px;
@@ -133,13 +123,17 @@ a{
 	border: 1px;
 	cursor: pointer;
 }
+.redColor{
+	color: red;
+}
+.blueColor{
+	color: blue;
+}
 .todayDate{
-	/*border: 1px solid red;*/
 	background-color: pink;
 	border-radius: 5px;
 }
 .clickedDate{
-	/*border: 1px solid #337755;*/
 	color: white;
 	background-color: green;
 	border-radius: 5px;
@@ -148,26 +142,8 @@ a{
 /*-------------------------------------------*/
 /*            jobProcess 디자인              */
 /*-------------------------------------------*/
-.jobProcessLi{
-	height: 30px;
-	margin-top: 10px;
-	text-align: center;
-	display: inline-block;
-}
-.jobProcessLi > span{
-	width: 100%;
-	line-height: 30px;
-	font-size: 16px;
-	color: #ffffff;
-	background-color: #337755;
-	border: 1px solid green;
-	border-radius: 5px;
-	display: inline-block;
-	cursor: pointer;
-}
-.clickedjob{
-	background-color: #bb0000;
-	border: 1px solid #770000;
+.designCompanyName{
+	margin-bottom: 10px;
 }
 .mainRight100 #companyId{
 	font-size: 17px;
@@ -178,28 +154,65 @@ a{
 	font-size: 16px;
 }
 .clickedJob{
-	border: 1px solid red;
+	background-color: #337755;
+	border: 1px solid green;
 	color: #ffffff;
 }
-
-/*-------------------------------------------*/
-/*              Table 디자인                 */
-/*-------------------------------------------*/
 #subulProcessName{
 	font-weight: bold;
 	color: blue;
 }
-#jobProcessList{
+#subulProcessList{
 	width: 98%;
 	height: 400px; 
 	padding-left: 10px;
 	overflow: auto;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
+/*-------------------------------------------*/
+/*              Table 디자인                 */
+/*-------------------------------------------*/
 #itemCodeList{
 	width: 100%;
-	height: 124px; 
+	height: 150px; 
 	padding-left: 10px;
 	overflow: auto;
 }
-
+#itemGroupCategory, #subulTypeSearch{
+	height: 26px;
+	font-size: 15px;
+}
+#info_ItemGroupCategory{
+	width: 95%;
+	margin-top: 7px;
+	padding: 10px;
+	border: 1px solid green;
+	border-radius: 5%;
+}
+.itemCode{
+	color: #000077;
+	cursor: pointer;
+}
+.itemName{
+	color: #000077;
+	cursor: pointer;
+}
+.subulTitle{
+	padding-top: 10px;
+	font-size: 17px;
+}
+.subulData{
+	padding-top: 10px;
+	font-size: 18px;
+}
+.subulData input{
+	text-align: right;
+}
+.subulListSearch{
+	font-size: 20px;
+	text-align: right;
+}
+#subulSearchCondition{
+	height: 28px;
+	font-size: 17px;
+}

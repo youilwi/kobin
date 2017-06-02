@@ -3,6 +3,8 @@
 var today = new Date();				// 오늘
 var startDate = new Date();			// 달력의 시작일자
 var calendarDates = [];				// 달력의 날자 배열..
+var firstDate = today.getFullYear()+"-"+today.getMonth()+"-"+1;
+var firstDay = new Date(firstDate).getDay(); // 1월 1일의 요일
 
 // 3주간의 달력 일자를 설정하는 함수..
 function makeCalendar(displayYear, displayMonth){
@@ -35,8 +37,6 @@ function makeCalendar(displayYear, displayMonth){
 
 // 월과 요일(0~6)을 받아서 년간 주번호를 계산하는 함수..
 function makeWeekNo(selectedMonth, selectedDay){
-	//alert("makeWeekNo()");
-
 	var last = [31,28,31,30,31,30,31,31,30,31,30,31];
 	var year = today.getFullYear();
 	// ("윤년 !")에 대해서 2월의 마지막 날자를 조정한다.
@@ -50,11 +50,13 @@ function makeWeekNo(selectedMonth, selectedDay){
     for(var i=0; i<selectedMonth; i++){
         monthSum += last[i];
     }
-    // 계산식을 다시 만들어야 합니다.( 시간 될 때 변경하자. )
-    // weekCount = (월말합계 - (7-1월1일 요일) + 금일의 요일) / 7
+    // 1월의 7일보다 적은 날이면.. 최소 값 지정..
+    if(today.getMonth()==0 && today.getDate() <= 7) monthSum = 7;	
 
-    // 년간 주 번호의 계산식: (전월까지의 합 + tr번호*7) / 7
-    var weekCount = (monthSum - selectedDay) / 7;
+    // 계산식을 다시 만들어야 합니다.( 시간 될 때 변경하자. )
+    // weekCount = (월말합계 - (7-1월1일의 요일) + 금일의 요일) / 7
+    var weekCount = (monthSum - (7-firstDay) + selectedDay) / 7;
+
     $("#displayWeek1").text(Math.floor(weekCount));
     $("#displayWeek2").text(Math.floor(weekCount + 2));
 }

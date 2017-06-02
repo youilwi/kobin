@@ -86,7 +86,24 @@
 										</div>
 									</div>
 									<div class="row">
-										<div id="jobProcessList" class="col-xs-12">
+										<div class="col-xs-12" style="margin: 20px;">
+											<div class="row">
+												<div class="col-xs-9 subulListSearch">
+													<label for="subulSearchCondition">수불정보 조회 : </label>
+													<select name="subulSearchCondition" id="subulSearchCondition">
+														<option value="searchByDate" selected>일자별 조회</option>
+														<option value="searchByItem">품목별 조회</option>
+													</select>
+												</div>
+												<div class="col-xs-2">
+													<button class="btn btn-primary" id="subulSearchBtn">조회</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div id="subulProcessList" class="col-xs-12">
 									        <table class="table table-striped table-condensed">
 									        	<colgroup>
 									        		<col class="col-xs-2"/>
@@ -211,11 +228,11 @@
 									</div>
 
 					                <div class="row">
-					                    <div class="col-xs-6 col-xs-offset-3">
-					                        <button class="btn btn-success">리스트</button>
-					                        <button class="btn btn-info">등록</button>
-					                        <button class="btn btn-warning">수정</button>
-					                        <button class="btn btn-danger">삭제</button>
+					                    <div class="col-xs-10 col-xs-offset-1">
+					                        <button class="btn btn-success">100건보기</button>
+					                        <button class="btn btn-info">300건보기</button>
+					                        <button class="btn btn-warning">500건보기</button>
+					                        <button class="btn btn-danger">900건보기</button>
 					                    </div>
 					                </div>
 					                <br/>
@@ -228,12 +245,12 @@
 								<div class="col-xs-12 mainRightFull">
 									<div class="row">
 										<div class="col-xs-12 mainRight100">
-											<div class="row" style="margin-top: 10px;">
+											<div class="row designCompanyName" style="margin-top: 10px;">
 												<div class="col-xs-2" style="text-align: right;">
 													<h4><label for="companyId">회사:</label></h4>
 												</div>												
 												<div class="col-xs-7">
-													<input type="text" class="form-control" id="companyId" name="companyId" value="그린식품 주식회사" readonly="radonly" placeholder="코드(회사이름)" />
+													<input type="text" class="form-control" id="companyId" name="companyId" value="그린식품 주식회사" readonly placeholder="코드(회사이름)" />
 												</div>
 												<div class="col-xs-3" style="text-align: right;">
 													<button class="btn btn-primary" id="searchCompanyId">
@@ -245,22 +262,22 @@
 											<div class="row">
 												<div class="col-xs-12 col-xs-offset-1">
 													<div class="row jobProcessRow">
-														<button class="btn btn-info jobProcess clickedJob" id="orderLi">
+														<button class="btn btn-success jobProcess clickedJob" id="orderLi">
 											 				<i class="glyphicon"></i>주문
 											 			</button>
-											 			<button class="btn btn-info jobProcess" id="purchaseLi">
+											 			<button class="btn btn-success jobProcess" id="purchaseLi">
 											 				<i class="glyphicon"></i>구매
 											 			</button>
-											 			<button class="btn btn-info jobProcess" id="productLi">
+											 			<button class="btn btn-success jobProcess" id="productLi">
 											 				<i class="glyphicon"></i>생산
 											 			</button>
-														<button class="btn btn-info jobProcess" id="packLi">
+														<button class="btn btn-success jobProcess" id="packLi">
 											 				<i class="glyphicon"></i>포장
 											 			</button>
-														<button class="btn btn-info jobProcess" id="issueLi">
+														<button class="btn btn-success jobProcess" id="issueLi">
 											 				<i class="glyphicon"></i>출고
 											 			</button>
-														<button class="btn btn-info jobProcess" id="stockLi">
+														<button class="btn btn-success jobProcess" id="stockLi">
 											 				<i class="glyphicon"></i>재고
 											 			</button>
 											 		</div>
@@ -271,10 +288,10 @@
 											<div class="row">
 											    <div class="col-xs-7">										
 													달력:&nbsp;&nbsp;
-													<span id="displayYear" class="calTitle">2017</span>&nbsp;년&nbsp;
-													<span id="displayMonth" class="calTitle">5</span>&nbsp;월&nbsp;
-										    		( <span id="displayWeek1" class="calTitle">1</span>&nbsp;주 ~
-										    		 <span id="displayWeek2" class="calTitle">3</span>&nbsp;주 )
+													<span id="displayYear" class="calendarTitle">17</span>&nbsp;년&nbsp;
+													<span id="displayMonth" class="calendarTitle">5</span>&nbsp;월&nbsp;
+										    		( <span id="displayWeek1" class="calendarTitle">1</span>&nbsp;주 ~
+										    		 <span id="displayWeek2" class="calendarTitle">3</span>&nbsp;주 )
 												</div>
 												<div class="col-xs-5 weeklyMove" style="text-align: right;">
 													<button class="btn btn-primary" id="beforeWeek">
@@ -320,14 +337,14 @@
 
 											<div class="row">
 												<div class="col-xs-8">
-													<div class="row">
+													<!-- <div class="row">
 														<span style="font-size:18px; padding-left: 10px;">
 															[ 품목 선택 ]
 														</span>
-													</div>
+													</div> -->
 
 													<div id="itemCodeList" class="row">
-														<table class="table table-striped table-condensed">
+														<table class="table table-striped table-condensed itemCodeListTable">
 												        	<colgroup>
 												        		<col class="col-xs-4"/>
 												        		<col class="col-xs-5"/>
@@ -343,41 +360,58 @@
 												            </thead>
 
 												            <tbody>
-												                <tr>
-										                            <td>xxxxxxxxxxxx</td>
-										                            <td><a>그린생생단무지</a></td>
+												                <tr class="itemCodeListTr">
+										                            <td class="itemCode">xxxxxxxxxxxx</td>
+										                            <td class="itemName"><span>그린생생단무지</span></td>
 										                            <td>20170406</td>
 										                        </tr>
-										                        <tr>
-										                            <td>xxxxxxxxxxxx</td>
-										                            <td><a href="">맛좋은단무지</a></td>
+										                        <tr class="itemCodeListTr">
+										                            <td class="itemCode">xxxxxxxxxxxx</td>
+										                            <td class="itemName"><span>맛좋은단무지</span></td>
 										                            <td>20170406</td>
 										                        </tr>
-										                        <tr>
-										                            <td>xxxxxxxxxxxx</td>
-										                            <td><a href="">생생단무지</a></td>
+										                        <tr class="itemCodeListTr">
+										                            <td class="itemCode">xxxxxxxxxxxx</td>
+										                            <td class="itemName"><span>생생단무지</span></td>
 										                            <td>20170406</td>
 										                        </tr>
-										                        <tr>
-										                            <td>xxxxxxxxxxxx</td>
-										                            <td><a href="">생생단무지</a></td>
+										                        <tr class="itemCodeListTr">
+										                            <td class="itemCode">xxxxxxxxxxxx</td>
+										                            <td class="itemName"><span>생생단무지</span></td>
 										                            <td>20170406</td>
 										                        </tr>
-												                <tr>
-										                            <td>xxxxxxxxxxxx</td>
-										                            <td><a href="">벌크용그린생생단무지</a></td>
+												                <tr class="itemCodeListTr">
+										                            <td class="itemCode">xxxxxxxxxxxx</td>
+										                            <td class="itemName"><span>벌크용그린생생단무지</span></td>
 										                            <td>20170406</td>
 										                        </tr>
-										                        <tr>
-										                            <td>xxxxxxxxxxxx</td>
-										                            <td><a href="">맛좋은단무지</a></td>
+										                        <tr class="itemCodeListTr">
+										                            <td class="itemCode">xxxxxxxxxxxx</td>
+										                            <td class="itemName"><span>맛좋은단무지</span></td>
 										                            <td>20170406</td>
 										                        </tr>
 										                    </tbody>
 										                </table>
 									                </div>
 												</div>
-												<div class="col-xs-4"></div>
+
+												<div class="col-xs-4">
+													<div class="row">
+														<div class="col-xs-12">		
+															<label for="itemGroupCategory">품목 유형 : </label>
+															<select name="itemGroupCategory" id="itemGroupCategory">
+																<option value="product" selected>제 품</option>
+																<option value="semiProduct">반 제 품</option>
+																<option value="resource">원 재 료</option>
+															</select>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12" id="info_ItemGroupCategory">
+															<p>'<b>품목 유형</b>'을 선택한 후에 원하는 '<b>품목 코드</b>'를 선택하고 '<b>수불 수량</b>'의 입력을 시작합니다.</p>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div><!-- mainRight100 -->
 									</div>
@@ -385,22 +419,62 @@
 									<div class="row">
 										<div class="col-xs-12 mainRight200">
 											<div class="row">
-												<div class="col-xs-12 inputTitle">
-													생산품목: 
-													<span>xxxxxxxxxxxxx xxxxxxxxxxxxx</span>
-												</div>
-												<div class="col-xs-12 inputTitle">
-													생산일자: 
-													<span>xxxx</span>년
-													<span>xx</span>월 
-													<span>xx</span>일
-												</div>
-											</div><hr/>
-											<div class="row">
-												<div class="col-xs-12 inputData">
-
+												<div class="col-xs-12 subulTitle">
+													수불품목: 
+													<span id="subulItemCode">xxxxxxxxxxxxx</span>
+													<span id="subulItemName">xxxxxxxxxxxxx</span>
+													( <span id="governItemCode">xxxxxxxxxxxxx</span> )
 												</div>
 											</div>
+											<div class="row">
+												<div class="col-xs-7 subulTitle">
+													수불일자: 
+													<span id="subulYear">xxxx</span>년
+													<span id="subulMonth">xx</span>월
+													<span id="subulDate">xx</span>일
+												</div>
+												<div class="col-xs-5 subulTitle">
+													<label for="subulTypeSearch">수불 유형 : </label>
+													<select name="subulTypeSearch" id="subulTypeSearch">
+														<option value="purchaseInput" selected>구매입고</option>
+														<option value="plantInput">재배입고</option>
+														<option value="sampleInput">무상입고</option>
+													</select>
+												</div>
+											</div><hr/>
+
+											<div class="row">
+												<div class="col-xs-3 subulData">
+													<label for="stockQuantity">현재재고량:</label>
+												</div>
+												<div class="col-xs-3 subulData">
+													<input type="text" class="form-control" id="stockQuantity" name="stockQuantity" value="23,214" readonly placeholder="수량" />
+												</div>
+												<div class="col-xs-3 subulData">
+													<label for="averageQuantity">평균구매량:</label>
+												</div>
+												<div class="col-xs-3 subulData">
+													<input type="text" class="form-control" id="averageQuantity" name="averageQuantity" value="23,214" readonly placeholder="수량" />
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-2 subulData">
+													<label for="informQuantity">권장량</label>
+												</div>
+												<div class="col-xs-3 subulData">
+													<input type="text" class="form-control" id="informQuantity" name="informQuantity" value="23,214" readonly placeholder="수량" />
+												</div>
+												<div class="col-xs-2 subulData">
+													<label for="subulQuantity">입력량</label>
+												</div>
+												<div class="col-xs-3 subulData">
+													<input type="text" class="form-control" id="subulQuantity" name="subulQuantity" placeholder="수량" />
+												</div>
+												<div class="col-xs-2 subulData">
+													<button class="btn btn-primary" id="subulInsertBtn">등록</button>
+												</div>
+											</div><hr/>
 										</div><!-- mainRight200 -->
 									</div>
 								</div><!-- mainRightFull -->
