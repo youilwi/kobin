@@ -50,12 +50,10 @@ function makeWeekNo(selectedMonth, selectedDay){
     for(var i=0; i<selectedMonth; i++){
         monthSum += last[i];
     }
-    // 1월의 7일보다 적은 날이면.. 최소 값 지정..
-    if(today.getMonth()==0 && today.getDate() <= 7) monthSum = 7;	
 
-    // 계산식을 다시 만들어야 합니다.( 시간 될 때 변경하자. )
-    // weekCount = (월말합계 - (7-1월1일의 요일) + 금일의 요일) / 7
-    var weekCount = (monthSum - (7-firstDay) + selectedDay) / 7;
+    // weekCount = (월말합계 - 1월1일의 요일 + 금일의 날자) / 7
+    var weekCount = (monthSum + firstDay + today.getDate()) / 7;
+    //alert(Math.ceil(1/7));
 
     $("#displayWeek1").text(Math.floor(weekCount));
     $("#displayWeek2").text(Math.floor(weekCount + 2));
