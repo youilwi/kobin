@@ -10,6 +10,19 @@ $(".jobProcess").on("click", function(){
 		   .siblings().removeClass("clickedJob");
 });
 
+$(".itemCodeListTr").on("click", function(){
+    setSubulItem($(this).children().eq(0).text(), 
+        $(this).children().eq(1).text(), 
+        $(this).children().eq(2).text());
+});
+
+function setSubulItem(itemCode, itemName, date) {
+    // alert(itemCode+", "+itemName+", "+date);
+    $("#subulItemCode").text(itemCode);
+    $("#subulItemName").text(itemName);
+    $("#governItemCode").text(date);
+}
+
 // 1. 입력되는 숫자를 3자리마다 콤마(,)를 넣은 숫자로 리턴한다.
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
