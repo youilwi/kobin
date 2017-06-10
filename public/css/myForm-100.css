@@ -241,7 +241,7 @@ a{
 	margin-bottom: 10px;
 }
 #itemCodeList{
-	width: 108%;
+	width: 106%;
 	height: 120px; 
 	padding-left: 5px;
 	overflow: auto;
@@ -271,7 +271,13 @@ a{
 .subulDataInput{
 	margin-top: 10px;
 }
+.subulDataInput label, .subulDataDisplay label{
+	font-size: 18px;
+}
 .subulDataInput input, .subulDataDisplay input{
+	display: inline-block;
+	width: 140px;
+	font-size: 18px;
 	text-align: right;
 }
 .subulProcessTitle{
