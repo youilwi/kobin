@@ -276,7 +276,7 @@ a{
 }
 .subulDataInput input, .subulDataDisplay input{
 	display: inline-block;
-	width: 140px;
+	width: 110px;
 	font-size: 18px;
 	text-align: right;
 }

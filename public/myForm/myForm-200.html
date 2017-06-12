@@ -74,27 +74,221 @@
 			<div class="row">
 				<div class="col-xs-12 mainContentsFull">
 					<div class="row">
-						<div class="col-xs-3 mainLeft">
+						<div class="col-xs-6 mainLeft">
 							<div class="row">
-								<div class="col-xs-12 mainLeftFull">
-
-								</div><!-- mainLeftFull -->
+								<div class="col-xs-12 mainLeft100">
+									<div class="row designCompanyName">
+										<div class="col-xs-2 alignRight">
+											<label for="companyId">회사:</label>
+										</div>												
+										<div class="col-xs-7">
+											<input type="text" class="form-control" id="companyId" name="companyId" value="그린식품 주식회사" readonly placeholder="코드(회사이름)" />
+										</div>
+										<div class="col-xs-3 alignRight">
+											<button class="btn btn-primary" id="searchCompanyId">
+									 			<i class="glyphicon"></i>회사 찾기
+									 		</button>
+										</div>
+									</div>
+								</div><!-- mainLeft100 -->
+							</div>
+							<div class="row">
+								<div class="col-xs-12 mainLeft200">
+								</div><!-- mainLeft200 -->
+							</div>
+							<div class="row">
+								<div class="col-xs-12 mainLeft300">
+								</div><!-- mainLeft300 -->
 							</div>
 						</div><!-- mainContentsLeft -->
 
-						<div class="col-xs-6 mainCenter">
+						<div class="col-xs-6 mainRight">
 							<div class="row">
-								<div class="col-xs-12 mainCenterFull">
+								<div class="col-xs-12 mainRight100">
+									<div class="row">
+									    <div class="col-xs-7 calendarTitle">										
+											달력:&nbsp;&nbsp;
+											<span id="displayYear" class="calendarText">17</span>년&nbsp;
+											<span id="displayMonth" class="calendarText">5</span>월&nbsp;
+								    		( <span id="displayWeek1" class="calendarText">1</span>주 ~
+								    		 <span id="displayWeek2" class="calendarText">3</span>주 )
+										</div>
+										<div class="col-xs-5 weeklyMove alignCenter">
+											<button class="btn btn-primary" id="beforeWeek">
+									 			<i class="glyphicon"></i>&larr;이전주
+									 		</button>
+									 		<button class="btn btn-primary" id="nextWeek">
+									 			<i class="glyphicon"></i>다음주&rarr;
+									 		</button>
+										</div>
+									</div>
 
-								</div><!-- mainCenterFull -->
+									<div class="row" style="padding: 5px 0 0 10px;">
+										<div class="col-xs-12 calendarDate">
+											<table>
+												<tr class="calendarTableTr">
+													<td id="cal0" class="calDate redColor">0</td>
+													<td id="cal1" class="calDate blackColor">1</td>
+													<td id="cal2" class="calDate blackColor">2</td>
+													<td id="cal3" class="calDate blackColor">3</td>
+													<td id="cal4" class="calDate blackColor">4</td>
+													<td id="cal5" class="calDate blackColor">5</td>
+													<td id="cal6" class="calDate blueColor">6</td>
+
+													<td id="cal7" class="calDate redColor">7</td>
+													<td id="cal8" class="calDate blackColor">8</td>
+													<td id="cal9" class="calDate blackColor">9</td>
+													<td id="cal10" class="calDate blackColor">10</td>
+													<td id="cal11" class="calDate blackColor">11</td>
+													<td id="cal12" class="calDate blackColor">12</td>
+													<td id="cal13" class="calDate blueColor">13</td>
+
+													<td id="cal14" class="calDate redColor">14</td>
+													<td id="cal15" class="calDate blackColor">15</td>
+													<td id="cal16" class="calDate blackColor">16</td>
+													<td id="cal17" class="calDate blackColor">17</td>
+													<td id="cal18" class="calDate blackColor">18</td>
+													<td id="cal19" class="calDate blackColor">19</td>
+													<td id="cal20" class="calDate blueColor">20</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div><!-- mainRight100 -->
 							</div>
-						</div><!-- mainContentsCenter -->
 
-						<div class="col-xs-3 mainRight">
 							<div class="row">
-								<div class="col-xs-12 mainRightFull">
+								<div class="col-xs-12 mainRight200">
+									<div class="row">
+										<div class="col-xs-7 mainRight210">
+											<div class="row">
+												<input type="text" class="form-control" id="resourceName" name="resourceName" value="절임무" readonly placeholder="원료이름" />
+												<span class="subulTitle"> ( 원료 수불 ) </span>
+											</div>
+											<div class="row itemTableTitle">
+												<div class="col-xs-4 alignLeft">
+										        	<span>업무구분</span>
+										        </div>
+										        <div class="col-xs-4 alignLeft">
+								                	<span>수불수량</span>
+								                </div>
+								                <div class="col-xs-4 alignLeft">
+								                	<span>등록일자</span>
+								                </div>
+											</div>
+											<div id="itemCodeList" class="row">
+												<table class="table table-striped table-condensed">
+										        	<colgroup>
+										        		<col class="col-xs-4"/>
+										        		<col class="col-xs-4"/>
+										        		<col class="col-xs-4"/>
+										        	</colgroup>
 
-								</div><!-- mainRightFull -->
+										            <tbody>
+										                <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;구매요청</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170401</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;재고확인</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170402</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;구매발주</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170403</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;구매입고</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170404</td>
+								                        </tr>
+										                <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;생산출고</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170405</td>
+								                        </tr>
+								                    </tbody>
+								                </table>
+							                </div>
+							            </div><!-- mainRight210 -->
+
+										<div class="col-xs-5 mainRight220">
+											
+										</div><!-- mainRight220 -->
+									</div>
+								</div><!-- mainRight200 -->
+							</div>
+
+							<div class="row">
+								<div class="col-xs-12 mainRight300">
+									<div class="row">
+										<div class="col-xs-7 mainRight310">
+											<div class="row">
+												<input type="text" class="form-control" id="productName" name="productName" value="그린싱싱단무지" readonly placeholder="제품이름" />
+												<span class="subulTitle"> ( 제품 수불 ) </span>
+											</div>
+											<div class="row itemTableTitle">
+												<div class="col-xs-4">
+										        	<span>업무구분</span>
+										        </div>
+										        <div class="col-xs-4">
+								                	<span>수불수량</span>
+								                </div>
+								                <div class="col-xs-4">
+								                	<span>등록일자</span>
+								                </div>
+											</div>
+											<div id="itemCodeList" class="row">
+												<table class="table table-striped table-condensed">
+										        	<colgroup>
+										        		<col class="col-xs-4"/>
+										        		<col class="col-xs-4"/>
+										        		<col class="col-xs-4"/>
+										        	</colgroup>
+
+										            <tbody>
+										                <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;고객주문</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170401</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;재고확인</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170405</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;생산계획</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170402</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;생산</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170403</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;포장</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170404</td>
+								                        </tr>
+										                <tr class="itemCodeListTr">
+								                            <td class="subulType">&nbsp;&nbsp;출고</td>
+								                            <td class="subulQty alignRight"><span>12355.111</span></td>
+								                            <td class="subulDate alignRight">20170405</td>
+								                        </tr>								                        
+								                    </tbody>
+								                </table>
+							                </div>
+										</div><!-- mainRight310 -->
+
+										<div class="col-xs-5 mainRight320">											
+										</div><!-- mainRight320 -->
+									</div>
+								</div><!-- mainRight300 -->
 							</div>
 						</div><!-- mainContentsRight -->
 					</div>
@@ -117,6 +311,7 @@
 	<script src="/js/jquery-1.11.2.js"></script>
 	<script src="/js/bootstrap.js"></script>
 	<script src="/js/myMenu10.js"></script>
+	<script src="/js/myCalendar30.js"></script>
 </div>
 </body>
 </html>

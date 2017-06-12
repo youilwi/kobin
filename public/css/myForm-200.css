@@ -80,22 +80,27 @@ a{
 /*-------------------------------------------*/
 .leftContents, .mainContents, .rightContents{
 	margin-top: 10px;
-/*	border: 1px solid green;
-	border-radius: 10px;*/
 }
 .leftContentsFull, .rightContentsFull{
 	width: 100%;
-	height: 600px;
+	height: 660px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
-.mainLeft, .mainCenter, .mainRight{
-/*	border: 1px solid blue;
-	border-radius: 10px;*/
-}
-.mainLeftFull, .mainCenterFull, .mainRightFull{
+.mainLeft100, .mainRight100{
 	width: 100%;
-	height: 600px;
+	height: 120px;
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
+}
+.mainLeft200, .mainRight200{
+	width: 100%;
+	height: 270px;
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
+}.mainLeft300, .mainRight300{
+	width: 100%;
+	height: 270px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
@@ -106,3 +111,88 @@ a{
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
+/*-------------------------------------------*/
+/*             Calendar 디자인               */
+/*-------------------------------------------*/
+.calendarTitle{
+	margin: 20px 0px;
+	padding: 5px 0 0 30px;
+	font-size: 18px;
+}
+.weeklyMove{
+	margin: 20px 0px;
+}
+.calendarText{
+	color: blue;
+	font-size: 16px;
+	font-weight: bold;
+}
+.calendarDate td{
+	width: 24px;
+	text-align: center;
+	font-size: 17px;
+	border: 1px;
+	cursor: pointer;
+}
+.redColor{
+	color: red;
+}
+.blueColor{
+	color: blue;
+}
+.todayDate{
+	background-color: pink;
+	border-radius: 5px;
+}
+.clickedDate{
+	color: white;
+	background-color: green;
+	border-radius: 5px;
+}
+/*-------------------------------------------*/
+/*           Company Name 디자인             */
+/*-------------------------------------------*/
+.designCompanyName{
+	margin: 20px 0;
+	font-size: 20px;
+}
+.designCompanyName label{
+	padding-top: 3px;
+}
+.designCompanyName input{
+	width: 300px;
+	font-size: 18px;
+}
+/*-------------------------------------------*/
+/*            Item Table 디자인              */
+/*-------------------------------------------*/
+.alignCenter{
+	text-align: center;
+}
+.alignRight{
+	text-align: right;
+}
+#resourceName, #productName{
+	width: 200px;
+	font-size: 18px;
+	margin: 10px 0 10px 10px;
+	display: inline-block;
+}
+.subulTitle{
+	font-size: 18px;
+}
+.subulType, .subulQty, .subulDate{
+	color: #000077;
+	cursor: pointer;
+}
+.itemTableTitle{
+	font-size: 15px;
+	margin: 2px;
+}
+#itemCodeList{
+	width: 100%;
+	height: 150px; 
+	padding-left: 10px;
+}
+
+
