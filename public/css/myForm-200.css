@@ -115,12 +115,12 @@ a{
 /*             Calendar 디자인               */
 /*-------------------------------------------*/
 .calendarTitle{
-	margin: 20px 0px;
+	margin: 15px 0px;
 	padding: 5px 0 0 30px;
 	font-size: 18px;
 }
 .weeklyMove{
-	margin: 20px 0px;
+	margin: 15px 0px;
 }
 .calendarText{
 	color: blue;
@@ -128,7 +128,7 @@ a{
 	font-weight: bold;
 }
 .calendarDate td{
-	width: 24px;
+	width: 5%;
 	text-align: center;
 	font-size: 17px;
 	border: 1px;
@@ -160,7 +160,7 @@ a{
 	padding-top: 3px;
 }
 .designCompanyName input{
-	width: 300px;
+	width: 100%;
 	font-size: 18px;
 }
 /*-------------------------------------------*/
@@ -172,12 +172,6 @@ a{
 .alignRight{
 	text-align: right;
 }
-#resourceName, #productName{
-	width: 200px;
-	font-size: 18px;
-	margin: 10px 0 10px 10px;
-	display: inline-block;
-}
 .subulTitle{
 	margin: 15px 0 0 15px;
 	font-size: 18px;
@@ -188,15 +182,19 @@ a{
 	cursor: pointer;
 }
 #itemNameLabel{
-	margin-right: 124px;
+	margin-left: 30px;
+	font-size: 16px;
 }
 .itemCodeLabel{
+	text-align: right;
 	font-size: 16px;
-	margin: 12px;
+}
+.itemCodeLabel span{
+	margin-right: 30px;
 }
 #itemCodeList{
-	width: 103%;
-	height: 160px; 
+	width: 102%;
+	height: 155px; 
 	overflow: auto;
 	padding-left: 20px;
 }
@@ -204,7 +202,7 @@ a{
 	color: red;
 }
 #subulProcessSearch{
-	width: 80px;
+	width: 15%;
 	height: 26px;
 	font-size: 16px;
 	margin-left: 10px;
