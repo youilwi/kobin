@@ -82,7 +82,7 @@
 											<label for="companyId">회사:</label>
 										</div>												
 										<div class="col-xs-7">
-											<input type="text" class="form-control" id="companyId" name="companyId" value="그린식품 주식회사" readonly placeholder="코드(회사이름)" />
+											<input type="text" class="form-control" id="companyId" name="companyId" value="" readonly placeholder="코드(회사이름)" />
 										</div>
 										<div class="col-xs-3 alignRight">
 											<button class="btn btn-primary" id="searchCompanyId">
@@ -97,24 +97,25 @@
 									<div class="row">
 										<div class="col-xs-12 calendarTitle">										
 											수불일자:&nbsp;&nbsp;
-											<span id="subulYear" class="calendarText">2017</span>&nbsp;&nbsp;년
-											&nbsp;&nbsp;
-											<span id="subulMonth" class="calendarText">6</span>&nbsp;&nbsp;월
-											&nbsp;&nbsp;
-								    		<span id="subulDate" class="calendarText">13</span>&nbsp;&nbsp;일
+											<span id="subulYear" class="calendarText">2017</span>
+											&nbsp;&nbsp;년&nbsp;&nbsp;
+											<span id="subulMonth" class="calendarText">6</span>
+											&nbsp;&nbsp;월&nbsp;&nbsp;
+								    		<span id="subulDate" class="calendarText">13</span>
+								    		&nbsp;&nbsp;일
 										</div>
 									</div>
 
 									<div class="row">
 										<div class="col-xs-4">
-											<span id="itemNameLabel">품목이름</span>
+											<span id="itemNameLabel">(&nbsp;&nbsp;제품 이름&nbsp;&nbsp;)</span>
 										</div>
 										<div class="col-xs-8 itemCodeLabel">
-											<span id="itemStock">재고</span>				
-											<span>주문</span>
-											<span>생산</span>
-											<span>포장</span>
-											<span>출고</span>
+											<span class="redColor">( 재고 )</span>				
+											<span class="orderProcess">주문</span>
+											<span class="orderProcess">생산</span>
+											<span class="orderProcess">포장</span>
+											<span class="orderProcess">출고</span>
 										</div>
 									</div>
 
@@ -131,52 +132,52 @@
 
 								            <tbody>
 								                <tr class="itemCodeListTr">
-						                            <td class="subulType">벌크용그린싱싱단무지</td>
-						                            <td class="subulQty alignRight" id="itemStock">123.11</td>
-						                            <td class="subulDate alignRight">201.22</td>
-						                            <td class="subulDate alignRight">300.01</td>
-						                            <td class="subulDate alignRight">500.31</td>
-						                            <td class="subulDate alignRight">200.51</td>
+						                            <td class="itemNameList">벌크용그린싱싱단무지</td>
+						                            <td class="alignRight">123.11</td>
+						                            <td class="alignRight">201.22</td>
+						                            <td class="alignRight">300.01</td>
+						                            <td class="alignRight">500.31</td>
+						                            <td class="alignRight">200.51</td>
 						                        </tr>
 						                        <tr class="itemCodeListTr">
-						                            <td class="subulType">그린싱싱단무지0140</td>
-						                            <td class="subulQty alignRight" id="itemStock">355.11</td>
-						                            <td class="subulDate alignRight">204.12</td>
-						                            <td class="subulDate alignRight">335.20</td>
-						                            <td class="subulDate alignRight">662.35</td>
-						                            <td class="subulDate alignRight">615.70</td>
+						                            <td class="itemNameList">그린싱싱단무지-0140</td>
+						                            <td class="alignRight">355.11</td>
+						                            <td class="alignRight">204.12</td>
+						                            <td class="alignRight">335.20</td>
+						                            <td class="alignRight">662.35</td>
+						                            <td class="alignRight">615.70</td>
 						                        </tr>
 						                        <tr class="itemCodeListTr">
-						                            <td class="subulType">그린싱싱단무지0340</td>
-						                            <td class="subulQty alignRight" id="itemStock">636.79</td>
-						                            <td class="subulDate alignRight">311.25</td>
-						                            <td class="subulDate alignRight">633.26</td>
-						                            <td class="subulDate alignRight">327.66</td>
-						                            <td class="subulDate alignRight">133.65</td>
+						                            <td class="itemNameList">그린싱싱단무지-0340</td>
+						                            <td class="alignRight">636.79</td>
+						                            <td class="alignRight">311.25</td>
+						                            <td class="alignRight">633.26</td>
+						                            <td class="alignRight">327.66</td>
+						                            <td class="alignRight">133.65</td>
 						                        </tr>
 						                        <tr class="itemCodeListTr">
-						                            <td class="subulType">하진싱싱단무지0160</td>
-						                            <td class="subulQty alignRight" id="itemStock">355.11</td>
-						                            <td class="subulDate alignRight">204.12</td>
-						                            <td class="subulDate alignRight">335.20</td>
-						                            <td class="subulDate alignRight">662.35</td>
-						                            <td class="subulDate alignRight">615.70</td>
+						                            <td class="itemNameList">하진싱싱단무지-0160</td>
+						                            <td class="alignRight">355.11</td>
+						                            <td class="alignRight">204.12</td>
+						                            <td class="alignRight">335.20</td>
+						                            <td class="alignRight">662.35</td>
+						                            <td class="alignRight">615.70</td>
 						                        </tr>
 						                        <tr class="itemCodeListTr">
-						                            <td class="subulType">하진싱싱단무지0320</td>
-						                            <td class="subulQty alignRight" id="itemStock">636.79</td>
-						                            <td class="subulDate alignRight">311.25</td>
-						                            <td class="subulDate alignRight">633.26</td>
-						                            <td class="subulDate alignRight">327.66</td>
-						                            <td class="subulDate alignRight">133.65</td>
+						                            <td class="itemNameList">하진싱싱단무지-0320</td>
+						                            <td class="alignRight">636.79</td>
+						                            <td class="alignRight">311.25</td>
+						                            <td class="alignRight">633.26</td>
+						                            <td class="alignRight">327.66</td>
+						                            <td class="alignRight">133.65</td>
 						                        </tr>
 						                        <tr class="itemCodeListTr">
-						                            <td class="subulType">하진싱싱단무지0480</td>
-						                            <td class="subulQty alignRight" id="itemStock">636.79</td>
-						                            <td class="subulDate alignRight">311.25</td>
-						                            <td class="subulDate alignRight">633.26</td>
-						                            <td class="subulDate alignRight">327.66</td>
-						                            <td class="subulDate alignRight">133.65</td>
+						                            <td class="itemNameList">하진싱싱단무지-0480</td>
+						                            <td class="alignRight">636.79</td>
+						                            <td class="alignRight">311.25</td>
+						                            <td class="alignRight">633.26</td>
+						                            <td class="alignRight">327.66</td>
+						                            <td class="alignRight">133.65</td>
 						                        </tr>
 						                    </tbody>
 						                </table>
@@ -249,21 +250,135 @@
 									<div class="row">
 										<div class="col-xs-12 mainRight210">
 											<div class="row">
-												<button class="btn btn-success subulTitle" id="beforeWeek">
-									 				<i class="glyphicon"></i>제품 수불
-									 			</button>
-												<span id="subulProcessName" class="subulTitle">( 주문 )</span>
-												<span class="subulTitle">입력 화면</span>
+												<div class="col-xs-8 subulTitle">
+													<button class="btn btn-success" id="subulTitleBtn">
+										 				<i class="glyphicon"></i>제품 수불
+										 			</button>
+													( <span id="subulProcessName">주문</span> )
+													<span class="subulProcessLabel">입력화면</span>
+												</div>
+
+												<div class="col-xs-4 subulType">
+													<label for="subulTypeSearch">수불유형</label>
+													<select name="subulTypeSearch" id="subulTypeSearch">
+														<option value="orderType" selected>주문</option>
+														<option value="productType">생산</option>
+														<option value="boxingType">포장</option>
+														<option value="outputType">출고</option>
+													</select>
+												</div>
 											</div>
-											<div class="subulProcessType">
-												<label for="subulProcessSearch">수불 유형 : </label>
-												<select name="subulProcessSearch" id="subulProcessSearch">
-													<option value="orderQty" selected>주문</option>
-													<option value="productQty">생산</option>
-													<option value="boxingQty">포장</option>
-													<option value="outputQty">출고</option>
-												</select>
+
+											<div class="row">
+												<div class="col-xs-8 subulProduct">
+													<label for="subulProductName">제품</label>
+													<input type="text" class="form-control" id="subulProductName" name="subulProductName" value="" readonly placeholder="제품이름" />
+													<select name="boxingWeight" id="boxingWeight">
+														<option value="weight-1" selected>08.00</option>
+														<option value="weight-2">10.00</option>
+														<option value="weight-3">12.00</option>
+													</select>
+												</div>
+
+												<div class="col-xs-4 subulCustomer">
+													<label for="subulCustomerSearch">
+														주문고객</label>
+													<select name="subulCustomerSearch" id="subulCustomerSearch">
+														<option value="customer1" selected>고객-1</option>
+														<option value="customer2">고객-2</option>
+														<option value="customer3">고객-3</option>
+													</select>
+												</div>
 											</div>
+
+											<div class="row">
+												<div class="col-xs-12 subulInput">
+													<div class="col-xs-1">
+														<span class="subulInputLabel alignCenter">No.</span>
+													</div>
+													<div class="col-xs-3">
+														<span class="subulInputLabel">일자</span>
+													</div>
+													<div class="col-xs-3 alignCenter">
+														<span class="subulInputLabel">고객</span>
+													</div>
+													<div class="col-xs-3 alignCenter">
+														<span class="subulInputLabel">입력량</span>
+													</div>
+													<div class="col-xs-2 alignRight">
+														<span class="subulInputLabel">마감</span>
+													</div>
+												</div>
+											</div>
+
+											<div id="subulInputList" class="row">
+												<table class="table table-striped table-condensed">
+										        	<colgroup>
+										        		<col class="col-xs-1"/>
+										        		<col class="col-xs-3"/>
+										        		<col class="col-xs-4"/>
+										        		<col class="col-xs-3"/>
+										        		<col class="col-xs-1"/>
+										        	</colgroup>
+
+										            <tbody>
+										                <tr class="subulInputListTr">
+								                            <td class="subulInputSeq">001</td>
+								                            <td class="subulInputDate">2017-06-14</td>
+								                            <td class="subulInputCustomer">이마트</td>
+								                            <td>
+								                            	<input type="text" class="subulInputQty" id="subulInputQty1" name="subulInputQty1" value="" placeholder="수량입력" />
+								                            </td>
+								                            <td class="subulInputClose alignRight">N</td>
+								                        </tr>
+								                        <tr class="subulInputListTr">
+								                            <td class="subulInputSeq">002</td>
+								                            <td class="subulInputDate">123.11</td>
+								                            <td class="subulInputCustomer">201.22</td>
+								                            <td>
+								                            	<input type="text" class="subulInputQty" id="subulInputQty2" name="subulInputQty2" value="" placeholder="수량입력" />
+								                            </td>
+								                            <td class="subulInputClose alignRight">N</td>
+								                        </tr>
+								                        <tr class="subulInputListTr">
+								                            <td class="subulInputSeq">003</td>
+								                            <td class="subulInputDate">123.11</td>
+								                            <td class="subulInputCustomer">201.22</td>
+								                            <td>
+								                            	<input type="text" class="subulInputQty" id="subulInputQty3" name="subulInputQty3" value="" placeholder="수량입력" />
+								                            </td>
+								                            <td class="subulInputClose">200.51</td>
+								                        </tr>
+								                        <tr class="subulInputListTr">
+								                            <td class="subulInputSeq">001</td>
+								                            <td class="subulInputDate">123.11</td>
+								                            <td class="subulInputCustomer">201.22</td>
+								                            <td>
+								                            	<input type="text" class="subulInputQty" id="subulInputQty4" name="subulInputQty4" value="" placeholder="수량입력" />
+								                            </td>
+								                            <td class="subulInputClose">200.51</td>
+								                        </tr>
+								                        <tr class="subulInputListTr">
+								                            <td class="subulInputSeq">001</td>
+								                            <td class="subulInputDate">123.11</td>
+								                            <td class="subulInputCustomer">201.22</td>
+								                            <td>
+								                            	<input type="text" class="subulInputQty" id="subulInputQty5" name="subulInputQty5" value="" placeholder="수량입력" />
+								                            </td>
+								                            <td class="subulInputClose">200.51</td>
+								                        </tr>
+								                        <tr class="subulInputListTr">
+								                            <td class="subulInputSeq">001</td>
+								                            <td class="subulInputDate">123.11</td>
+								                            <td class="subulInputCustomer">201.22</td>
+								                            <td>
+								                            	<input type="text" class="subulInputQty" id="subulInputQty6" name="subulInputQty6" value="" placeholder="수량입력" />
+								                            </td>
+								                            <td class="subulInputClose">200.51</td>
+								                        </tr>
+								                    </tbody>
+								                </table>
+							                </div>
 							            </div><!-- mainRight210 -->
 
 										<div class="col-xs-12 mainRight220">

@@ -172,15 +172,6 @@ a{
 .alignRight{
 	text-align: right;
 }
-.subulTitle{
-	margin: 15px 0 0 15px;
-	font-size: 18px;
-	display: inline-block;
-}
-.subulType, .subulQty, .subulDate{
-	color: #000077;
-	cursor: pointer;
-}
 #itemNameLabel{
 	margin-left: 30px;
 	font-size: 16px;
@@ -188,9 +179,10 @@ a{
 .itemCodeLabel{
 	text-align: right;
 	font-size: 16px;
+	margin-bottom: 5px;
 }
 .itemCodeLabel span{
-	margin-right: 30px;
+	margin-right: 26px;
 }
 #itemCodeList{
 	width: 102%;
@@ -198,16 +190,66 @@ a{
 	overflow: auto;
 	padding-left: 20px;
 }
-#itemStock{
-	color: red;
+.itemNameList, .orderProcess{
+	font-weight: bold;
+	color: #227744;
+	cursor: pointer;
 }
-#subulProcessSearch{
-	width: 15%;
+/*-------------------------------------------*/
+/*         오른쪽 수불화면  디자인           */
+/*-------------------------------------------*/
+.subulTitle{
+	margin-top: 15px;
+	font-size: 17px;
+	display: inline-block;
+}
+.subulType label{
+	margin-top: 20px;
+	font-size: 17px;
+}
+#subulTypeSearch{
+	width: 50%;
 	height: 26px;
 	font-size: 16px;
-	margin-left: 10px;
 }
-.subulProcessType label{
+.subulProduct label{
 	margin-top: 15px;
-	font-size: 18px;
+	font-size: 17px;
+}
+#subulProductName{
+	width: 63%;
+	display: inline-block;
+}
+#boxingWeight{
+	width: 24%;
+	height: 26px;
+	font-size: 16px;
+	display: inline-block;
+}
+.subulCustomer label{
+	margin-top: 15px;
+	font-size: 17px;
+}
+#subulCustomerSearch{
+	width: 50%;
+	height: 26px;
+	font-size: 16px;
+	display: inline-block;
+}
+.subulInput{
+	margin-top: 10px;
+}
+.subulInputLabel{
+	font-size: 16px;
+	padding: 10px 0;
+}
+#subulInputList{
+	width: 102%;
+	height: 115px; 
+	overflow: auto;
+	padding-left: 20px;
+}
+.subulInputQty{
+	width: 100%;
+	text-align: right;
 }
