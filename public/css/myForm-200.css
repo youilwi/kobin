@@ -163,6 +163,14 @@ a{
 	width: 100%;
 	font-size: 18px;
 }
+.subulProcess label{
+	font-size: 17px;
+}
+#subulProcessSearch{
+	width: 50%;
+	height: 26px;
+	font-size: 16px;
+}
 /*-------------------------------------------*/
 /*            Item Table 디자인              */
 /*-------------------------------------------*/
@@ -203,34 +211,31 @@ a{
 	font-size: 17px;
 	display: inline-block;
 }
-.subulType label{
+.subulCustomer label{
 	margin-top: 20px;
 	font-size: 17px;
 }
-#subulTypeSearch{
+#subulCustomerSearch{
 	width: 50%;
 	height: 26px;
 	font-size: 16px;
+	display: inline-block;
 }
 .subulProduct label{
 	margin-top: 15px;
+	padding-left: 5px;
 	font-size: 17px;
 }
 #subulProductName{
-	width: 63%;
+	margin-left: 10px;
+	width: 60%;
 	display: inline-block;
 }
-#boxingWeight{
-	width: 24%;
-	height: 26px;
-	font-size: 16px;
-	display: inline-block;
-}
-.subulCustomer label{
+.subulBoxing label{
 	margin-top: 15px;
 	font-size: 17px;
 }
-#subulCustomerSearch{
+#boxingWeight{
 	width: 50%;
 	height: 26px;
 	font-size: 16px;

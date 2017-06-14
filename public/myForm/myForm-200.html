@@ -90,6 +90,20 @@
 									 		</button>
 										</div>
 									</div>
+
+									<div class="row">
+										<div class="col-xs-4"></div>
+										<div class="col-xs-4 subulProcess alignRight">
+											<label for="subulProcessSearch">업무구분: </label>
+											<select name="subulProcessSearch" id="subulProcessSearch">
+												<option value="orderType" selected>주문</option>
+												<option value="productType">생산</option>
+												<option value="boxingType">포장</option>
+												<option value="outputType">출고</option>
+											</select>
+										</div>
+										<div class="col-xs-4"></div>
+									</div>
 								</div><!-- mainLeft100 -->
 							</div>
 							<div class="row">
@@ -258,28 +272,6 @@
 													<span class="subulProcessLabel">입력화면</span>
 												</div>
 
-												<div class="col-xs-4 subulType">
-													<label for="subulTypeSearch">수불유형</label>
-													<select name="subulTypeSearch" id="subulTypeSearch">
-														<option value="orderType" selected>주문</option>
-														<option value="productType">생산</option>
-														<option value="boxingType">포장</option>
-														<option value="outputType">출고</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-xs-8 subulProduct">
-													<label for="subulProductName">제품</label>
-													<input type="text" class="form-control" id="subulProductName" name="subulProductName" value="" readonly placeholder="제품이름" />
-													<select name="boxingWeight" id="boxingWeight">
-														<option value="weight-1" selected>08.00</option>
-														<option value="weight-2">10.00</option>
-														<option value="weight-3">12.00</option>
-													</select>
-												</div>
-
 												<div class="col-xs-4 subulCustomer">
 													<label for="subulCustomerSearch">
 														주문고객</label>
@@ -287,6 +279,23 @@
 														<option value="customer1" selected>고객-1</option>
 														<option value="customer2">고객-2</option>
 														<option value="customer3">고객-3</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-8 subulProduct">
+													<label for="subulProductName">수불 제품 이름 : </label>
+													<input type="text" id="subulProductName" name="subulProductName" value="" readonly placeholder="제품 이름" />
+												</div>
+
+												<div class="col-xs-4 subulBoxing">
+													<label for="boxingWeight">
+														포장중량</label>
+													<select name="boxingWeight" id="boxingWeight">
+														<option value="weight-1" selected>08.00</option>
+														<option value="weight-2">10.00</option>
+														<option value="weight-3">12.00</option>
 													</select>
 												</div>
 											</div>
