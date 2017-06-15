@@ -167,9 +167,15 @@ a{
 	font-size: 17px;
 }
 #subulProcessSearch{
-	width: 50%;
+	width: 40%;
 	height: 26px;
 	font-size: 16px;
+	color: #337755;
+	font-weight: bold;
+}
+#subulProcessSearch option{
+	color: blue;
+	font-weight: bold;
 }
 /*-------------------------------------------*/
 /*            Item Table 디자인              */
@@ -186,7 +192,7 @@ a{
 }
 .itemCodeLabel{
 	text-align: right;
-	font-size: 16px;
+	font-size: 15px;
 	margin-bottom: 5px;
 }
 .itemCodeLabel span{
@@ -216,7 +222,7 @@ a{
 	font-size: 17px;
 }
 #subulCustomerSearch{
-	width: 50%;
+	width: 69%;
 	height: 26px;
 	font-size: 16px;
 	display: inline-block;
@@ -227,8 +233,9 @@ a{
 	font-size: 17px;
 }
 #subulProductName{
+	width: 65%;
+	font-size: 16px;
 	margin-left: 10px;
-	width: 60%;
 	display: inline-block;
 }
 .subulBoxing label{
@@ -241,20 +248,29 @@ a{
 	font-size: 16px;
 	display: inline-block;
 }
-.subulInput{
-	margin-top: 10px;
-}
-.subulInputLabel{
-	font-size: 16px;
-	padding: 10px 0;
-}
-#subulInputList{
-	width: 102%;
+.subulInputList{
 	height: 115px; 
 	overflow: auto;
 	padding-left: 20px;
 }
+.subulListCustomer{
+	font-weight: bold;
+	color: #227744;
+	cursor: pointer;
+}
+.subulInput{
+	margin-top: 10px;
+}
+.subulInput label{
+	font-size: 16px;
+	padding: 10px 0;
+}
 .subulInputQty{
-	width: 100%;
+	width: 50%;
+	font-size: 16px;
 	text-align: right;
+}
+.documentInfo{
+	margin: 5px;
+	font-size: 16;
 }
