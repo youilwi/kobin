@@ -1,52 +1,64 @@
 // alert("myForm200.html");
 
-// 업무구분 change 여부 확인
+// 업무구분 change 여부 확인..
 $("#subulProcessSearch").on("change", function(){
-    alert("subulProcessSearch");
+    var subulProcessName = $("#subulProcessSearch option:checked").text();
+    $("#subulProcessName").text(subulProcessName);
 });
 
-/*
-// 6가지의 업무 구분을 클릭한 경우에..
-$(".jobProcess").on("click", function(){
-	// 클릭한 업무 구분을 제목에 넣는다.
-	$("#subulProcessName").text($(this).text());
-	// 클릭한 업무 구분의 아이디로 함수를 호출한다.
-	$(this).addClass("clickedJob")
-		   .siblings().removeClass("clickedJob");
+// 제품 이름을 클릭했을 때..
+$(".itemNameList").on("click", function(){
+    $("#subulProductName").val($(this).text());
 });
 
-$(".itemCodeListTr").on("click", function(){
-    setSubulItem($(this).children().eq(0).text(), 
-        $(this).children().eq(1).text(), 
-        $(this).children().eq(2).text());
+// 제품 이름에 마우스를 올렸을 때..
+$(".itemNameList").on("click", function(){
+    $(this)                  //클릭 이벤트가 일어난 요소에는 
+        .addClass("grayBackColor")      // 클래스를 추가하고
+        .parent()                       // 그 부모 요소의
+        .siblings()                     // 형제 요소 중에서 
+        .children()                     // 자녀요소의
+        .removeClass("grayBackColor");  // 클래스를 제거하기 
 });
 
-function setSubulItem(itemCode, itemName, date) {
-    // alert(itemCode+", "+itemName+", "+date);
-    $("#subulItemCode").text(itemCode);
-    $("#subulItemName").text(itemName);
-    $("#governItemCode").text(date);
+// 고객 이름에 마우스를 올렸을 때..
+$(".subulListCustomer").on("click", function(){
+    $(this)                  //클릭 이벤트가 일어난 요소에는 
+        .addClass("grayBackColor")      // 클래스를 추가하고
+        .parent()                       // 그 부모 요소의
+        .siblings()                     // 형제 요소 중에서 
+        .children()                     // 자녀요소의
+        .removeClass("grayBackColor");  // 클래스를 제거하기 
+});
+
+$("#subulInputQty").on("keyup", function(){
+    var checkNum = checkNumber($(this).val());
+    var regExp = /^[0-9 | \,? | 0-9 | \.? | 0-9]{10}$/;
+    if(regExp.test(checkNum)){
+        alert("1. "+regExp.test(checkNum));
+    }else{
+        alert("2. "+regExp.test(checkNum));
+    }
+});
+// 사용자가 Key를 입력할 때마다 Function 호출..
+function checkNumber (data) {
+    var num = data;
+    if ( data.length > 8 ) {
+        num = data.substring(0,8);
+    } else {
+        // Number형이 아닌 입력값은 null값으로 대체..
+        num = data.replace(/[^0-9]/g, '');
+    }
+    alert(num);
+    return num;
 }
 
-// 1. 입력되는 숫자를 3자리마다 콤마(,)를 넣은 숫자로 리턴한다.
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+// 화면이 로딩될 때마다 실행되는 함수..
+function myForm200Start(){
+    // 업무 구분을 초기화시킨다.
+    var subulProcessName = $("#subulProcessSearch option:checked").text();
+    $("#subulProcessName").text(subulProcessName);
+    // 생산 제품을 초기화시킨다.
+    var productName = $(".itemNameList").eq(0).text();
+    $("#subulProductName").val(productName);    
 }
-// 2. 입력되는 숫자를 3자리마다 콤마(,)를 넣은 숫자로 리턴한다.
-function comma(num){
-    var len, point, str; 
-       
-    num = num + ""; 
-    point = num.length % 3 ;
-    len = num.length; 
-   
-    str = num.substring(0, point); 
-    while (point < len) { 
-        if (str != "") str += ","; 
-        str += num.substring(point, point + 3); 
-        point += 3; 
-    }     
-    return str; 
-}
-
-*/

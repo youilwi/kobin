@@ -115,7 +115,7 @@
 											&nbsp;&nbsp;년&nbsp;&nbsp;
 											<span id="subulMonth" class="calendarText">6</span>
 											&nbsp;&nbsp;월&nbsp;&nbsp;
-								    		<span id="subulDate" class="calendarText">13</span>
+								    		<span id="subulDate" class="calendarText">1</span>
 								    		&nbsp;&nbsp;일
 										</div>
 									</div>
@@ -211,14 +211,13 @@
 									    <div class="col-xs-7 calendarTitle">										
 											달력:&nbsp;&nbsp;
 											<span id="displayYear" class="calendarText">17</span>년&nbsp;
-											<span id="displayMonth" class="calendarText">5</span>월&nbsp;
 								    		( <span id="displayWeek1" class="calendarText">1</span>주 ~
 								    		 <span id="displayWeek2" class="calendarText">3</span>주 )
 										</div>
-										<div class="col-xs-5 weeklyMove alignCenter">
+										<div class="col-xs-5 weeklyMove alignCenter">&nbsp;&nbsp;
 											<button class="btn btn-primary" id="beforeWeek">
 									 			<i class="glyphicon"></i>&larr;이전주
-									 		</button>
+									 		</button>&nbsp;&nbsp;
 									 		<button class="btn btn-primary" id="nextWeek">
 									 			<i class="glyphicon"></i>다음주&rarr;
 									 		</button>
@@ -266,9 +265,9 @@
 											<div class="row">
 												<div class="col-xs-6 subulTitle">
 													<button class="btn btn-success" id="subulTitleBtn">
-										 				<i class="glyphicon"></i>제품 수불
+										 				<i class="glyphicon"></i>제품수불
 										 			</button>
-													(&nbsp;&nbsp;<span id="subulProcessName">주문</span>&nbsp;&nbsp;)
+													(&nbsp;&nbsp;<span id="subulProcessName">업무</span>&nbsp;&nbsp;)
 													<span class="subulProcessLabel">입력화면</span>
 												</div>
 
@@ -276,9 +275,9 @@
 													<label for="subulCustomerSearch">
 														주문고객</label>
 													<select name="subulCustomerSearch" id="subulCustomerSearch">
-														<option value="customer1" selected>고객-1</option>
-														<option value="customer2">고객-2</option>
-														<option value="customer3">고객-3</option>
+														<option value="customer1" selected>주문고객-1</option>
+														<option value="customer2">주문고객-2</option>
+														<option value="customer3">주문고객-3</option>
 													</select>
 												</div>
 											</div>
@@ -293,9 +292,9 @@
 													<label for="boxingWeight">
 														포장중량</label>
 													<select name="boxingWeight" id="boxingWeight">
-														<option value="weight-1" selected>08.00</option>
-														<option value="weight-2">10.00</option>
-														<option value="weight-3">12.00</option>
+														<option value="weight-1" selected>01.00</option>
+														<option value="weight-2">03.40</option>
+														<option value="weight-3">05.50</option>
 													</select>
 												</div>
 											</div>
@@ -326,33 +325,33 @@
 
 											            <tbody>
 											                <tr class="subulInputListTr">
-									                            <td class="subulListSeq">001</td>
+									                            <td class="subulListSeq">&nbsp;1</td>
 									                            <td class="subulListCustomer">전통시장</td>
 									                            <td class="subulListQty">100.00</td>
 									                        </tr>
 									                        <tr class="subulInputListTr">
-									                            <td class="subulListSeq">002</td>
+									                            <td class="subulListSeq">&nbsp;2</td>
 									                            <td class="subulListCustomer">남양식자재마트</td>
 									                            <td class="subulListQty">200.00</td>
 									                        </tr>
 									                        <tr class="subulInputListTr">
-									                            <td class="subulListSeq">003</td>
-									                            <td class="subulListCustomer">123.11</td>
+									                            <td class="subulListSeq">&nbsp;3</td>
+									                            <td class="subulListCustomer">판매거래처-1</td>
 									                            <td class="subulListQty">201.22</td>
 									                        </tr>
 									                        <tr class="subulInputListTr">
-									                            <td class="subulListSeq">004</td>
-									                            <td class="subulListCustomer">123.11</td>
+									                            <td class="subulListSeq">&nbsp;4</td>
+									                            <td class="subulListCustomer">판매거래처-2</td>
 									                            <td class="subulListQty">201.22</td>
 									                        </tr>
 									                        <tr class="subulInputListTr">
-									                            <td class="subulListSeq">005</td>
-									                            <td class="subulListCustomer">123.11</td>
+									                            <td class="subulListSeq">&nbsp;5</td>
+									                            <td class="subulListCustomer">판매거래처-3</td>
 									                            <td class="subulListQty">201.22</td>
 									                        </tr>
 									                        <tr class="subulInputListTr">
-									                            <td class="subulListSeq">006</td>
-									                            <td class="subulListCustomer">123.11</td>
+									                            <td class="subulListSeq">&nbsp;6</td>
+									                            <td class="subulListCustomer">판매거래처-4</td>
 									                            <td class="subulListQty">200.51</td>
 									                        </tr>
 									                    </tbody>
@@ -360,17 +359,21 @@
 									            </div>
 
 									            <div class="col-xs-4 subulInput alignRight">
-							                		<label for="subulInputQty1">입력수량</label>
-							                		<input type="text" class="subulInputQty" id="subulInputQty1" name="subulInputQty1" value="" placeholder="수량입력" />
+							                		<label for="subulInputQty">입력수량</label>
+							                		<input type="text" id="subulInputQty" name="subulInputQty" value="" placeholder="수량입력" />
 
 							                		</br>
 				
-							                		<button class="btn btn-primary" id="beforeWeek">
+							                		<button class="btn btn-primary" id="insertQty">
 									 					<i class="glyphicon"></i>등록
 									 				</button>&nbsp;
-							                		<button class="btn btn-info" id="beforeWeek">
+							                		<button class="btn btn-info" id="updateQty">
 									 					<i class="glyphicon"></i>수정
 									 				</button>&nbsp;
+
+									 				<button class="btn btn-primary" id="saveInputQty">
+											 			<i class="glyphicon"></i>&larr;재고에 반영
+											 		</button>&nbsp;
 									 		</button>
 							                	</div>
 							                </div>
@@ -416,19 +419,27 @@
 				<div class="col-xs-12 rightContentsFull">
 					<div class="row" style="margin-top: 20px;">
 						<div class="col-xs-12" class="documentInfo">
-							<p style="font-size: 20px;">[ 시스템 사용 설명서 ]</p>
+							<p style="font-size: 20px;">[ 제품수불 사용 설명서 ]</p>
 							<p>1. 먼저 '<b>업무구분</b>'을 선택합니다.</p>
 							<p>2. 달력의 '<b>날자</b>'를 선택합니다.</p>
-							<p>3. 수불일 확인후 '<b>제품</b>'을 선택합니다.</p>
+							<p>3. 수불일자 확인후 '<b>제품</b>'을 선택.</p>
 							<p>4. 주문이면 '<b>주문고객</b>'을 선택합니다.</p>
 							<p>5. 제품의 '<b>포장중량</b>'을 선택합니다.</p>
 							<p>6. 제품의 '<b>입력수량</b>'을 입력합니다.</p>
-							<p>7. '<b>등록 버튼</b>'을 누릅니다.</p>
-							<p>8. 바로옆 등록된 데이터를 확인합니다.</p>
+							<p>7. '<b>등록</b>'을 다하고 재고에 반영합니다.</p>
 							<hr/>
 							<p style="font-size: 20px;">[ 용어 설명서 ]</p>
 							<p><b>업무구분</b>: 주문, 생산, 포장, 츨고 구분</p>
-							<p><b>수불일자</b>: 입력중인 수불 일자를 의미함</p>
+							<p><b>수불일자</b>: 입력중인 수불 일자를 의미</p>
+							<p><b>제품이름</b>: 품목보고가 된 제품만 등록</p>
+							<p><b>주문고객</b>: 제품을 주문하는(10개 업체)</p>
+							<p><b>포장중량</b>: 수불의 단위로 사용할 중량</p>
+							<p><b>입력수량</b>: 선택된 항목에 적용되는 수량</p>
+							<hr/>
+							<p style="font-size: 20px;">[ 원료수불 사용 설명서 ]</p>
+							<p>1. </p>
+							<p>2. </p>
+							<p>3. </p>
 						</div>
 					</div>
 				</div><!-- rightContentsFull -->
@@ -443,8 +454,8 @@
 	<script src="/js/jquery-1.11.2.js"></script>
 	<script src="/js/bootstrap.js"></script>
 	<script src="/js/myMenu10.js"></script>
-	<script src="/js/myCalendar20.js"></script>
 	<script src="/js/myForm-200.js"></script>
+	<script src="/js/myCalendar20.js"></script>
 </div>
 </body>
 </html>

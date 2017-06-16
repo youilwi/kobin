@@ -33,6 +33,11 @@ function makeCalendar(displayYear, displayMonth){
     // 년, 월 정보를 변경해 준다..
     $("#displayYear").text(displayYear);
     $("#displayMonth").text(displayMonth+1);
+
+    // 수불 년,월,일 정보도 초기화시킨다.
+    $("#subulYear").text(displayYear);
+    $("#subulMonth").text(displayMonth+1);
+    $("#subulDate").text(today.getDate());
 }
 
 // 월과 요일(0~6)을 받아서 년간 주번호를 계산하는 함수..
@@ -89,12 +94,20 @@ $("#nextWeek").on("click", function(){
 
 // 의미는 같지만.. 만들어지는 시점 때문에.. 아주 중요하다.
 // document 객체가 만들어진 후에는 언제든지.. 이벤트 발생.
-$(document).on("click", ".calDate", function(){
-	// 부모는 클래스 추가하고, 형제에서는 클래스를 제거하기..
-	$(this).addClass("clickedDate").siblings().removeClass("clickedDate");
+$(document).on("click", ".calDate", function(){	
+	$(this).addClass("clickedDate")		// 클래스 추가하고
+		   .siblings()					// 형제에서는 
+		   .removeClass("clickedDate");	// 클래스를 제거하기..
+
+	// 수불 일자를 설정한다.
+	var id_value = $(this).attr("id");	// id 속성 값 받기..
+	var index = id_value.substring(3,5);// 숫자만 받아오기..
+	$("#subulYear").text(calendarDates[index].getFullYear());
+	$("#subulMonth").text(calendarDates[index].getMonth());
+	$("#subulDate").text(calendarDates[index].getDate());
 });
 
-// 화면이 처음으로 로딩될 때 실행하는 함수..
+// 화면이 로딩될 때마다 실행되는 함수..
 window.onload=function(){
 	// 시작 일자를 설정하고..
 	startDate.setDate(today.getDate() - today.getDay() - 7);
@@ -102,4 +115,6 @@ window.onload=function(){
 	makeCalendar(today.getFullYear(), today.getMonth());
 	// 화면의 주 번호를 설정한다.
 	makeWeekNo(today.getMonth(), today.getDay());
+	// myForm200 폼 초기 실행..
+	myForm200Start();
 }
