@@ -103,7 +103,7 @@ $(document).on("click", ".calDate", function(){
 	var id_value = $(this).attr("id");	// id 속성 값 받기..
 	var index = id_value.substring(3,5);// 숫자만 받아오기..
 	$("#subulYear").text(calendarDates[index].getFullYear());
-	$("#subulMonth").text(calendarDates[index].getMonth());
+	$("#subulMonth").text(calendarDates[index].getMonth()+1);
 	$("#subulDate").text(calendarDates[index].getDate());
 });
 

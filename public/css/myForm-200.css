@@ -1,12 +1,8 @@
 @charset "utf-8"; 
 /* 한글 인코딩 설정 */
 /*-------------------------------------------*/
-body{
-	margin: 0;
-}
-a{
-	text-decoration: none;
-}
+body{ margin: 0; }
+a{ text-decoration: none; }
 /*-------------------------------------------*/
 /*             headerDiv 디자인              */
 /*-------------------------------------------*/
@@ -124,7 +120,7 @@ a{
 }
 .calendarText{
 	color: blue;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 }
 .calendarDate td{
@@ -196,7 +192,7 @@ a{
 }
 .itemCodeLabel{
 	text-align: right;
-	font-size: 15px;
+	font-size: 16px;
 	margin-bottom: 5px;
 }
 .itemCodeLabel span{
@@ -221,6 +217,9 @@ a{
 	font-size: 17px;
 	display: inline-block;
 }
+#subulTitleBtn{
+	font-size: 17px;
+}
 #subulProcessName{
 	padding: 5px;
 	background-color: #336699;
@@ -232,7 +231,7 @@ a{
 	font-size: 17px;
 }
 #subulCustomerSearch{
-	width: 69%;
+	width: 66%;
 	height: 26px;
 	font-size: 16px;
 	display: inline-block;
@@ -253,30 +252,30 @@ a{
 	font-size: 17px;
 }
 #boxingWeight{
-	width: 50%;
+	width: 40%;
 	height: 26px;
 	font-size: 16px;
 	display: inline-block;
 }
-.subulInputList{
+.subulTablelabel{
+	font-size: 16px;
+	padding-left: 18px;
+}
+.subulList{
 	height: 125px; 
 	overflow: auto;
-	padding-left: 20px;
 }
 .subulListCustomer{
 	font-weight: bold;
 	color: #227744;
 	cursor: pointer;
 }
-.subulInput{
-	margin-top: 10px;
-}
 .subulInput label{
 	font-size: 16px;
 	padding: 10px 0;
 }
 #subulInputQty{
-	width: 50%;
+	width: 60%;
 	font-size: 16px;
 	padding-right: 3px;
 	text-align: right;
