@@ -77,7 +77,42 @@
 						<div class="col-xs-3 mainLeft">
 							<div class="row">
 								<div class="col-xs-12 mainLeftFull">
+									<div class="row">
+										<div class="col-xs-12 mainLeft100">
+											<div class="row displayCompanyName">			
+												<div class="col-xs-8">
+													<input type="text" class="form-control" id="companyName" name="companyName" value="" readonly placeholder="회사이름" />
+												</div>
+												<div class="col-xs-4 searchCompanyName">
+													<button class="btn btn-primary" id="searchCompanyId">
+											 			<i class="glyphicon"></i>찾기
+											 		</button>
+												</div>
+											</div>
 
+											<div class="row">
+												<div class="col-xs-12 searchSubulProcess">
+													<label for="subulProcessSearch">업무구분: </label>
+													<select name="subulProcessSearch" id="subulProcessSearch">
+														<option value="orderType" selected>주문</option>
+														<option value="productType">생산</option>
+														<option value="boxingType">포장</option>
+														<option value="outputType">출고</option>
+													</select>
+												</div>
+											</div>
+										</div><!-- mainLeft100 -->
+									</div>
+									<div class="row">
+										<div class="col-xs-12 mainLeft200">
+											<h4>제품과 포장중량 선택</h4>
+										</div><!-- mainLeft200 -->
+									</div>
+									<div class="row">
+										<div class="col-xs-12 mainLeft300">
+											<h4>제품 BOM 확인</h4>
+										</div><!-- mainLeft300 -->
+									</div>
 								</div><!-- mainLeftFull -->
 							</div>
 						</div><!-- mainContentsLeft -->
@@ -85,7 +120,71 @@
 						<div class="col-xs-6 mainCenter">
 							<div class="row">
 								<div class="col-xs-12 mainCenterFull">
+									<div class="row">
+										<div class="col-xs-12 mainCenter100">
+											<div class="row">
+											    <div class="col-xs-7 calendarTitle">
+													달력 :&nbsp;&nbsp;
+													<span id="displayYear" class="calendarText">17</span>
+													&nbsp;년&nbsp;( &nbsp;
+										    		<span id="displayWeek1" class="calendarText">1</span>
+										    		&nbsp;주&nbsp;~&nbsp;
+										    		<span id="displayWeek2" class="calendarText">3</span>
+										    		&nbsp;주&nbsp;)
+												</div>
+												<div class="col-xs-5 weeklyMove alignCenter">&nbsp;&nbsp;
+													<button class="btn btn-primary" id="beforeWeek">
+											 			<i class="glyphicon"></i>&larr;이전주
+											 		</button>&nbsp;&nbsp;
+											 		<button class="btn btn-primary" id="nextWeek">
+											 			<i class="glyphicon"></i>다음주&rarr;
+											 		</button>
+												</div>
+											</div>
 
+											<div class="row" style="padding-top: 5px;">
+												<div class="col-xs-12 calendarDate">
+													<table>
+														<tr class="calendarTableTr">
+															<td id="cal0" class="calDate redColor">0</td>
+															<td id="cal1" class="calDate blackColor">1</td>
+															<td id="cal2" class="calDate blackColor">2</td>
+															<td id="cal3" class="calDate blackColor">3</td>
+															<td id="cal4" class="calDate blackColor">4</td>
+															<td id="cal5" class="calDate blackColor">5</td>
+															<td id="cal6" class="calDate blueColor">6</td>
+															
+															<td id="cal7" class="calDate redColor">7</td>
+															<td id="cal8" class="calDate blackColor">8</td>
+															<td id="cal9" class="calDate blackColor">9</td>
+															<td id="cal10" class="calDate blackColor">10</td>
+															<td id="cal11" class="calDate blackColor">11</td>
+															<td id="cal12" class="calDate blackColor">12</td>
+															<td id="cal13" class="calDate blueColor">13</td>
+															
+															<td id="cal14" class="calDate redColor">14</td>
+															<td id="cal15" class="calDate blackColor">15</td>
+															<td id="cal16" class="calDate blackColor">16</td>
+															<td id="cal17" class="calDate blackColor">17</td>
+															<td id="cal18" class="calDate blackColor">18</td>
+															<td id="cal19" class="calDate blackColor">19</td>
+															<td id="cal20" class="calDate blueColor">20</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div><!-- mainCenter100 -->
+									</div>
+									<div class="row">
+										<div class="col-xs-12 mainCenter200">
+											<h4>제품 수불 입력</h4>
+										</div><!-- mainCenter200 -->
+									</div>
+									<div class="row">
+										<div class="col-xs-12 mainCenter300">
+											<h4>원료 수불 입력</h4>
+										</div><!-- mainCenter300 -->
+									</div>
 								</div><!-- mainCenterFull -->
 							</div>
 						</div><!-- mainContentsCenter -->
@@ -93,7 +192,21 @@
 						<div class="col-xs-3 mainRight">
 							<div class="row">
 								<div class="col-xs-12 mainRightFull">
-
+									<div class="row">
+										<div class="col-xs-12 mainRight100">
+											<h4>주문 거래처 선택</h4>
+										</div><!-- mainRight100 -->
+									</div>
+									<div class="row">
+										<div class="col-xs-12 mainRight200">
+											<h4>원료 선택</h4>
+										</div><!-- mainRight200 -->
+									</div>
+									<div class="row">
+										<div class="col-xs-12 mainRight300">
+											<h4>메시지 확인</h4>
+										</div><!-- mainRight300 -->
+									</div>
 								</div><!-- mainRightFull -->
 							</div>
 						</div><!-- mainContentsRight -->
@@ -105,6 +218,30 @@
 		<div class="col-xs-2 rightContents">
 			<div class="row">
 				<div class="col-xs-12 rightContentsFull">
+					<div class="row" style="margin-top: 20px;">
+						<div class="col-xs-12" class="documentInfo">
+							<p style="font-size: 20px;">[ 제품수불 사용 설명서 ]</p>
+							<p>1. 먼저 '<b>업무구분</b>'을 선택합니다.</p>
+							<p>2. 달력의 '<b>날자</b>'를 선택합니다.</p>
+							<p>3. 수불일자 확인후 '<b>제품</b>'을 선택.</p>
+							<p>4. 주문이면 '<b>주문고객</b>'을 선택합니다.</p>
+							<p>5. 주문은 '<b>수량</b>'을 입력합니다.</p>
+							<p>6. 업무 진행은 '<b>종료</b>'로 마감합니다.</p>
+							<hr/>
+							<p style="font-size: 20px;">[ 원료수불 사용 설명서 ]</p>
+							<p>1. </p>
+							<p>2. </p>
+							<p>3. </p>
+							<hr/>
+							<p style="font-size: 20px;">[ 용어 설명서 ]</p>
+							<p><b>업무구분</b>: 주문, 생산, 포장, 츨고 구분</p>
+							<p><b>수불일자</b>: 입력중인 수불 일자를 의미</p>
+							<p><b>제품이름</b>: 품목보고가 된 제품만 등록</p>
+							<p><b>주문고객</b>: 제품을 주문하는(10개 업체)</p>
+							<p><b>포장중량</b>: 수불의 단위로 사용할 중량</p>
+							<p><b>입력수량</b>: 선택된 항목에 적용되는 수량</p>							
+						</div>
+					</div>
 				</div><!-- rightContentsFull -->
 			</div>
 		</div><!-- rightContents -->
@@ -116,7 +253,9 @@
 
 	<script src="/js/jquery-1.11.2.js"></script>
 	<script src="/js/bootstrap.js"></script>
-	<script src="/js/myMenu10.js"></script>
+	<script src="/js/myMenu10.js"></script>	
+	<script src="/js/myForm-300.js"></script>
+	<script src="/js/myCalendar20.js"></script>
 </div>
 </body>
 </html>

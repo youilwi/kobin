@@ -80,22 +80,47 @@ a{
 /*-------------------------------------------*/
 .leftContents, .mainContents, .rightContents{
 	margin-top: 10px;
-/*	border: 1px solid green;
-	border-radius: 10px;*/
 }
 .leftContentsFull, .rightContentsFull{
 	width: 100%;
-	height: 600px;
+	height: 710px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
-.mainLeft, .mainCenter, .mainRight{
-/*	border: 1px solid blue;
-	border-radius: 10px;*/
-}
-.mainLeftFull, .mainCenterFull, .mainRightFull{
+
+.mainLeft100{
 	width: 100%;
-	height: 600px;
+	height: 110px;
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
+}
+.mainLeft200, .mainLeft300{
+	width: 100%;
+	height: 300px;
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
+}
+.mainCenter100{
+	width: 100%;
+	height: 110px;
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
+}
+.mainCenter200, .mainCenter300{
+	width: 100%;
+	height: 300px;
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
+}
+.mainRight100{
+	width: 100%;
+	height: 110px;
+	border: 1px solid #aabbcc;
+	border-radius: 10px;
+}
+.mainRight200, .mainRight300{
+	width: 100%;
+	height: 300px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
 }
@@ -105,4 +130,63 @@ a{
 	height: 100px;
 	border: 1px solid #aabbcc;
 	border-radius: 10px;
+}
+/*-------------------------------------------*/
+/*             Calendar 디자인               */
+/*-------------------------------------------*/
+.calendarTitle{
+	margin: 15px 0px;
+	padding: 5px 0 0 20px;
+	font-size: 18px;
+}
+.weeklyMove{
+	margin: 15px 0px;
+}
+.calendarText{
+	color: blue;
+	font-size: 18px;
+	font-weight: bold;
+}
+.calendarDate td{
+	width: 5%;
+	text-align: center;
+	font-size: 17px;
+	border: 1px;
+	cursor: pointer;
+}
+.redColor{
+	color: red;
+}
+.blueColor{
+	color: blue;
+}
+.todayDate{
+	background-color: pink;
+	border-radius: 5px;
+}
+.clickedDate{
+	color: white;
+	background-color: green;
+	border-radius: 5px;
+}
+/*-------------------------------------------*/
+/*              Company 디자인               */
+/*-------------------------------------------*/
+.displayCompanyName{
+	margin: 12px 0px 10px 0px;
+	padding: 5px 0px 0px 0px;
+	font-size: 18px;
+}
+.searchSubulProcess{
+	padding-left: 30px;
+	font-size: 18px;
+}
+#companyName{
+	font-size: 18px;
+	width: 120%;
+}
+#subulProcessSearch{
+	margin-left: 20px;
+	width: 50%;
+	height: 30px;
 }

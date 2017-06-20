@@ -231,7 +231,7 @@ a{ text-decoration: none; }
 	font-size: 17px;
 }
 #subulCustomerSearch{
-	width: 66%;
+	width: 56%;
 	height: 26px;
 	font-size: 16px;
 	display: inline-block;
@@ -252,16 +252,17 @@ a{ text-decoration: none; }
 	font-size: 17px;
 }
 #boxingWeight{
-	width: 40%;
+	width: 35%;
 	height: 26px;
 	font-size: 16px;
 	display: inline-block;
 }
 .subulTablelabel{
-	font-size: 16px;
-	padding-left: 18px;
+	font-size: 15px;
+	padding-left: 10px;
 }
 .subulList{
+	width: 66%;
 	height: 125px; 
 	overflow: auto;
 }
@@ -270,14 +271,17 @@ a{ text-decoration: none; }
 	color: #227744;
 	cursor: pointer;
 }
+/*.subulInput{
+	width: 100%;
+}*/
 .subulInput label{
 	font-size: 16px;
-	padding: 10px 0;
 }
 #subulInputQty{
-	width: 60%;
+	width: 50%;
 	font-size: 16px;
 	padding-right: 3px;
+	margin: 10px 5px;
 	text-align: right;
 }
 #saveInputQty{
