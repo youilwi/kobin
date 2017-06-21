@@ -178,7 +178,7 @@ a{
 	font-size: 18px;
 }
 #companyName{
-	font-size: 18px;
+	font-size: 17px;
 	width: 115%;
 }
 .displayCustomerName{
@@ -187,14 +187,14 @@ a{
 	font-size: 18px;
 }
 #customerName{
-	font-size: 18px;
+	font-size: 17px;
 	width: 115%;
 }
 /*-------------------------------------------*/
 /*             itemList 디자인               */
 /*-------------------------------------------*/
 .itemListTable{
-	width: 110%;
+	width: 107%;
 	height: 200px; 
 	font-size: 16px;
 	margin-top: 15px;
@@ -215,11 +215,12 @@ a{
 /*-------------------------------------------*/
 /*           제품 수불화면 디자인            */
 /*-------------------------------------------*/
-#subulProcessLabel{
-	margin-left: 10%;
+.displaySubulProcess{
+	margin-top: 20px;
+	padding-left: 5%;
 	font-size: 17px;
 }
 #subulProcessSearch{
-	width: 15%;
+	width: 62%;
 	height: 28px;
 }
