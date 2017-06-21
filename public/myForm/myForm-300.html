@@ -79,7 +79,8 @@
 								<div class="col-xs-12 mainLeftFull">
 									<div class="row">
 										<div class="col-xs-12 mainLeft100">
-											<div class="row displayCompanyName">			
+											<h4>회사 이름</h4>
+											<div class="row displayCompanyName">
 												<div class="col-xs-8">
 													<input type="text" class="form-control" id="companyName" name="companyName" value="" readonly placeholder="회사이름" />
 												</div>
@@ -89,23 +90,72 @@
 											 		</button>
 												</div>
 											</div>
-
-											<div class="row">
-												<div class="col-xs-12 searchSubulProcess">
-													<label for="subulProcessSearch">업무구분: </label>
-													<select name="subulProcessSearch" id="subulProcessSearch">
-														<option value="orderType" selected>주문</option>
-														<option value="productType">생산</option>
-														<option value="boxingType">포장</option>
-														<option value="outputType">출고</option>
-													</select>
-												</div>
-											</div>
 										</div><!-- mainLeft100 -->
 									</div>
 									<div class="row">
 										<div class="col-xs-12 mainLeft200">
-											<h4>제품과 포장중량 선택</h4>
+											<!-- <h4>제품과 포장중량 선택</h4> -->
+
+											<div class="row itemListLabel">
+												<div class="col-xs-7">
+													<span id="itemNameLabel">제품 이름</span>
+												</div>
+												<div class="col-xs-5">
+													<span id="itemBoxingLabel">포장중량</span>
+												</div>
+											</div>
+
+											<div id="itemList" class="row itemListTable">
+												<table class="table table-striped table-condensed">
+										        	<colgroup>
+										        		<col class="col-xs-9"/>
+										        		<col class="col-xs-3"/>
+										        	</colgroup>
+
+										            <tbody>
+										                <tr class="itemCodeListTr">
+								                            <td class="itemNameList">벌크용그린싱싱단무지</td>
+								                            <td class="itemBoxingList">123.11</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">그린싱싱단무지-0140</td>
+								                            <td class="itemBoxingList">355.11</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">그린싱싱단무지-0340</td>
+								                            <td class="itemBoxingList">636.79</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">하진싱싱단무지-0160</td>
+								                            <td class="itemBoxingList">355.11</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">하진싱싱단무지-0320</td>
+								                            <td class="itemBoxingList">636.79</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">하진싱싱단무지-0480</td>
+								                            <td class="itemBoxingList">636.79</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">하진싱싱단무지-0480</td>
+								                            <td class="itemBoxingList">636.79</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">하진싱싱단무지-0480</td>
+								                            <td class="itemBoxingList">636.79</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">하진싱싱단무지-0480</td>
+								                            <td class="itemBoxingList">636.79</td>
+								                        </tr>
+								                        <tr class="itemCodeListTr">
+								                            <td class="itemNameList">하진싱싱단무지-0480</td>
+								                            <td class="itemBoxingList">636.79</td>
+								                        </tr>
+								                    </tbody>
+								                </table>
+							                </div>
 										</div><!-- mainLeft200 -->
 									</div>
 									<div class="row">
@@ -177,7 +227,24 @@
 									</div>
 									<div class="row">
 										<div class="col-xs-12 mainCenter200">
-											<h4>제품 수불 입력</h4>
+											<div class="row">
+												<div class="col-xs-12 calendarTitle">
+													<span style="margin-right: 10px;">제품 수불 입력</span>( 
+													<span id="subulYear" class="calendarText">2017</span> 년 
+													<span id="subulMonth" class="calendarText">6</span> 월 
+													<span id="subulDate" class="calendarText">1</span> 일 )
+
+													<span id="subulProcessLabel">
+														<label for="subulProcessSearch"> 업무구분: </label>
+														<select name="subulProcessSearch" id="subulProcessSearch">
+															<option value="orderType" selected>주문</option>
+															<option value="productType">생산</option>
+															<option value="boxingType">포장</option>
+															<option value="outputType">출고</option>
+														</select>
+													</span>
+												</div>
+											</div>
 										</div><!-- mainCenter200 -->
 									</div>
 									<div class="row">
@@ -195,16 +262,26 @@
 									<div class="row">
 										<div class="col-xs-12 mainRight100">
 											<h4>주문 거래처 선택</h4>
+											<div class="row displayCustomerName">			
+												<div class="col-xs-8">
+													<input type="text" class="form-control" id="customerName" name="customerName" value="" readonly placeholder="거래처이름" />
+												</div>
+												<div class="col-xs-4 searchCustomerName">
+													<button class="btn btn-primary" id="searchCustomerId">
+											 			<i class="glyphicon"></i>찾기
+											 		</button>
+												</div>
+											</div>
 										</div><!-- mainRight100 -->
 									</div>
 									<div class="row">
 										<div class="col-xs-12 mainRight200">
-											<h4>원료 선택</h4>
+											<h4>메시지 확인</h4>
 										</div><!-- mainRight200 -->
 									</div>
 									<div class="row">
 										<div class="col-xs-12 mainRight300">
-											<h4>메시지 확인</h4>
+											<h4>원료 선택</h4>
 										</div><!-- mainRight300 -->
 									</div>
 								</div><!-- mainRightFull -->
@@ -221,12 +298,12 @@
 					<div class="row" style="margin-top: 20px;">
 						<div class="col-xs-12" class="documentInfo">
 							<p style="font-size: 20px;">[ 제품수불 사용 설명서 ]</p>
-							<p>1. 먼저 '<b>업무구분</b>'을 선택합니다.</p>
-							<p>2. 달력의 '<b>날자</b>'를 선택합니다.</p>
-							<p>3. 수불일자 확인후 '<b>제품</b>'을 선택.</p>
-							<p>4. 주문이면 '<b>주문고객</b>'을 선택합니다.</p>
-							<p>5. 주문은 '<b>수량</b>'을 입력합니다.</p>
-							<p>6. 업무 진행은 '<b>종료</b>'로 마감합니다.</p>
+							<p>1. 회사와 <b>'업무구분'</b>을 선택합니다</p>
+							<p>2. 달력의 <b>'날자'</b>'를 선택합니다</p>
+							<p>3. <b>'주문거래처'</b>를 선택합니다</p>
+							<p>4. <b>'제품'</b>과 <b>'포장중량'</b>을 선택합니다</p>
+							<p>5. <b>'제품 수불'</b>을 입력합니다.</p>
+							<p>6. 업무 진행은 <b>'종료'</b>로 마감합니다.</p>
 							<hr/>
 							<p style="font-size: 20px;">[ 원료수불 사용 설명서 ]</p>
 							<p>1. </p>

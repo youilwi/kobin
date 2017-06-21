@@ -177,16 +177,49 @@ a{
 	padding: 5px 0px 0px 0px;
 	font-size: 18px;
 }
-.searchSubulProcess{
-	padding-left: 30px;
-	font-size: 18px;
-}
 #companyName{
 	font-size: 18px;
 	width: 115%;
 }
+.displayCustomerName{
+	margin: 12px 0px 10px 0px;
+	padding: 5px 0px 0px 0px;
+	font-size: 18px;
+}
+#customerName{
+	font-size: 18px;
+	width: 115%;
+}
+/*-------------------------------------------*/
+/*             itemList 디자인               */
+/*-------------------------------------------*/
+.itemListTable{
+	width: 110%;
+	height: 200px; 
+	font-size: 16px;
+	margin-top: 15px;
+	padding-left: 3%;
+	overflow: auto;
+}
+.itemListLabel{
+	margin-top: 25px;
+}
+#itemNameLabel, #itemBoxingLabel{
+	font-size: 17px;
+}
+.itemNameList, .itemBoxingList{
+	font-weight: bold;
+	/*color: #227744;*/
+	cursor: pointer;
+}
+/*-------------------------------------------*/
+/*           제품 수불화면 디자인            */
+/*-------------------------------------------*/
+#subulProcessLabel{
+	margin-left: 10%;
+	font-size: 17px;
+}
 #subulProcessSearch{
-	margin-left: 20px;
-	width: 52%;
-	height: 30px;
+	width: 15%;
+	height: 28px;
 }
