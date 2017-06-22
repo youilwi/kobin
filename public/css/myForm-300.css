@@ -195,22 +195,22 @@ a{
 /*-------------------------------------------*/
 .itemListTable{
 	width: 107%;
-	height: 200px; 
-	font-size: 16px;
+	height: 190px;
 	margin-top: 15px;
 	padding-left: 3%;
 	overflow: auto;
 }
 .itemListLabel{
-	margin-top: 25px;
-}
-#itemNameLabel, #itemBoxingLabel{
-	font-size: 17px;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 20px;
 }
 .itemNameList, .itemBoxingList{
 	font-weight: bold;
-	/*color: #227744;*/
 	cursor: pointer;
+}
+.itemBackColor{
+	background-color: pink;
 }
 /*-------------------------------------------*/
 /*           제품 수불화면 디자인            */
@@ -220,7 +220,29 @@ a{
 	padding-left: 5%;
 	font-size: 17px;
 }
-#subulProcessSearch{
+#subulProcessSelect{
 	width: 62%;
 	height: 28px;
 }
+.subulListLabel{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.subulListTable{
+	width: 103%;
+	height: 130px;
+	margin-top: 2%;
+	padding-left: 3%;
+	overflow: auto;
+}
+.backColorYellow{
+	margin: 1%;
+	padding: 1%;
+	font-size: 17px;
+	border: 1px solid green;
+}
+.subulCustomerName{
+	text-align: left;
+}
+/*-------------------------------------------*/

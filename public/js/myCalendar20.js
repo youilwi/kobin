@@ -116,5 +116,5 @@ window.onload=function(){
 	// 화면의 주 번호를 설정한다.
 	makeWeekNo(today.getMonth(), today.getDay());
 	// myForm200 폼 초기 실행..
-	myForm200Start();
+	myForm300Start();
 }
