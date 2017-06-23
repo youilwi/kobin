@@ -246,3 +246,14 @@ a{
 	text-align: left;
 }
 /*-------------------------------------------*/
+/*           수불 입력화면 디자인            */
+/*-------------------------------------------*/
+.displaySubulInput{
+	font-size: 17px;
+	padding-left: 5%;
+}
+#subulInputQty{
+	width: 62%;
+	margin-top: 15px;
+	text-align: right;
+}
