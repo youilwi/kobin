@@ -367,11 +367,26 @@
 													<label for="subulProcessSearch"> 업무구분: </label>
 
 													<select name="subulProcessSelect" id="subulProcessSelect">
-														<option value="orderType" selected>주문(생산계획)</option>
+														<option value="stockType">기초재고</option>
+														<option value="orderType" selected>고객주문</option>
 														<option value="productType">생산(OEM)</option>
 														<option value="boxingType">포장(입고)</option>
-														<option value="outputType">납품(출고마감)</option>
+														<option value="outputType">납품(출고)</option>
+														<option value="realType">재고실사</option>
 													</select>
+												</div>
+
+												<div class="col-xs-12 subulProcessDetail">
+													종류 : 
+													<label id="order1" >
+														<input type="radio" name="order" checked="checked" value="open"/>주문
+													</label>
+													<label id="order2">
+														<input type="radio" name="order" value="plan"/>계획
+													</label>
+													<label id="order3">
+														<input type="radio" name="order" value="close"/>마감
+													</label>
 												</div>
 											</div>
 
